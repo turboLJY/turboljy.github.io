@@ -1,0 +1,126 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/8qcEw_nrk_5HEcCpYdJu8BTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(http://fonts.gstatic.com/s/lato/v11/rZPI2gHXi8zxUjnybc2ZQFKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(http://fonts.gstatic.com/s/lato/v11/MgNNr5y1C_tIEuLEmicLmwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(http://fonts.gstatic.com/s/lato/v11/cT2GN3KRBUX69GVJ2b2hxn-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(http://fonts.gstatic.com/s/lato/v11/1KWMyx7m-L0fkQGwYhWwuuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(http://fonts.gstatic.com/s/lato/v11/AcvTq8Q0lyKKNxRlL28Rn4X0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(http://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYEJBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+    font-family: 'TeXGyrePagella';
+    src: url(cc7fb5f529b178f4f999035667192117.woff) format('woff'),
+         url(53f87e2b745c3930f4a684e34484dd2e.eot),
+         url(53f87e2b745c3930f4a684e34484dd2e.eot?#iefix) format('embedded-opentype'),
+         url(43fbbf49ee17492cfa72cb084ea73340.ttf) format('truetype'),
+         url(986f93ad70b359de2d69943f39bae648.svg#tex_gyre_pagellaregular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeXGyrePagella';
+    src: url(58a03c9f1791931cda82b51a1f384f54.woff) format('woff'),
+         url(d80ec4c0756e6a991db5be57d0d41ef7.eot),
+         url(d80ec4c0756e6a991db5be57d0d41ef7.eot?#iefix) format('embedded-opentype'),
+         url(7c60593fb68ff752eb7e5cc4c906aef2.ttf) format('truetype'),
+         url(0cdd340430bed86ce28565888c601e17.svg#tex_gyre_pagellabold) format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeXGyrePagella';
+    src: url(fef23d0916ebdad441bc284a3fcedfc4.woff) format('woff'),
+         url(211d57d91375c721e71c51337a8f0bce.eot),
+         url(211d57d91375c721e71c51337a8f0bce.eot?#iefix) format('embedded-opentype'),
+         url(c070c775e677e792d4b116f52e8597d9.ttf) format('truetype'),
+         url(043aea05e94b28b2e3022058acb219fb.svg#tex_gyre_pagellaitalic) format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'TeXGyrePagella';
+    src: url(e2c466052f3f95c4a14c05fd705fff5b.woff) format('woff'),
+         url(c3100698a9bf9f27de6ef9478ff4a0d2.eot),
+         url(c3100698a9bf9f27de6ef9478ff4a0d2.eot?#iefix) format('embedded-opentype'),
+         url(5f9bab8ea372719d0f0cf5b13ec588ff.ttf) format('truetype'),
+         url(081b590739d6c031d8b092a9ef9fdcf8.svg#tex_gyre_pagellabold_italic) format('svg');
+    font-weight: bold;
+    font-style: italic;
+
+}
+/*
+ *  Academicons 1.8.0 by James Walsh - https://github.com/jpswalsh
+ *  Fonts generated using the IcoMoon app - http://icomoon.io/app
+ *  Square icons designed to be used alongside Font Awesome square icons - https://fortawesome.github.io/Font-Awesome/
+ *  Licenses - Font: SIL OFL 1.1, CSS: MIT License
+ */
+@font-face {
+    font-family: 'Academicons';
+    src:url(c812316ebc65d292dd83f7d2cc2726bf.eot);
+    src:url(c812316ebc65d292dd83f7d2cc2726bf.eot) format('embedded-opentype'),
+        url(0575fa935075812534afa2805352ec54.ttf) format('truetype'),
+        url(64794d6b599c274edab750798fd89a5c.woff) format('woff'),
+        url(cfe4fb274f02c9b99412b2f02b9338bb.svg#academicons) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
