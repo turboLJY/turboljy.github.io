@@ -28,7 +28,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <h1>Paper Reading Notes ( June 2020 )</h1><a href="june-all.html" target="_blank" class="hero-link">Show All</a>
+            <h1>Paper Reading Notes ( June 2020 )</h1><!--<a href="june-all.html" target="_blank" class="hero-link">Show All</a>-->
           </div>
         </div><a href=".intro" class="continue link-scroll"><i class="fa fa-long-arrow-down"></i> Scroll Down</a>
       </div>
@@ -38,24 +38,39 @@
       <div class="container">
         <!-- Post-->
         <div class="row d-flex align-items-stretch">
-          <div class="text col-lg-7">
+          <div class="text col-lg-12">
             <div class="text-inner d-flex align-items-center">
               <div class="content">
                 <header class="post-header">
-                  <div class="category"><a href="#">Business</a><a href="#">Technology</a></div><a href="post.html">
-                    <h2 class="h4">Alberto Savoia Can Teach You About Interior</h2></a>
+                  <!--<div class="category"><a href="#">Business</a><a href="#">Technology</a></div>-->
+				  <a href="https://openreview.net/pdf?id=B1l8L6EtDS" target="_blank">
+                    <b>Self-Adversarial Learning with Comparative Discrimination for Text Generation (ICLR 2020)</b>
+				  </a>
                 </header>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrude consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                <footer class="post-footer d-flex align-items-center"><a href="#" class="author d-flex align-items-center flex-wrap">
-                    <div class="avatar"><img src="../img/avatar-1.jpg" alt="..." class="img-fluid"></div>
-                    <div class="title"><span>John Doe</span></div></a>
-                  <div class="date"><i class="icon-clock"></i> 2 months ago</div>
-                  <div class="comments"><i class="icon-comment"></i>12</div>
+                <p style="font-size:15px">Wangchunshu Zhou, Tao Ge, Ke Xu, Furu Wei, Ming Zhou</p>
+				<p style="color:black;font-size:17px;text-align:justify">Conventional Generative Adversarial Networks (GANs) for text generation tend to
+				have issues of reward sparsity and mode collapse that affect the quality and diversity
+				of generated samples. To address the issues, we propose a novel self-adversarial
+				learning (SAL) paradigm for improving GANs’ performance in text generation.
+				In contrast to standard GANs that use a binary classifier as its discriminator
+				to predict whether a sample is real or generated, SAL employs a comparative
+				discriminator which is a pairwise classifier for comparing the text quality between
+				a pair of samples. During training, SAL rewards the generator when its currently
+				generated sentence is found to be better than its previously generated samples.
+				This self-improvement reward mechanism allows the model to receive credits
+				more easily and avoid collapsing towards the limited number of real samples,
+				which not only helps alleviate the reward sparsity issue but also reduces the risk of
+				mode collapse. Experiments on text generation benchmark datasets show that our
+				proposed approach substantially improves both the quality and the diversity, and
+				yields more stable performance compared to the previous GANs for text generation.
+				</p>
+                <footer class="post-footer d-flex align-items-center">
+                  <div class="comments">read in 8 June, 2020</div>
                 </footer>
               </div>
             </div>
           </div>
-          <div class="image col-lg-5"><img src="../img/featured-pic-1.jpeg" alt="..."></div>
+          <!--<div class="image col-lg-4"><img src="../img/featured-pic-1.jpeg" alt="..."></div>-->
         </div>
 		<br>
         <!-- Post        -->
