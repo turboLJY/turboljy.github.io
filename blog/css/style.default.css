@@ -673,7 +673,7 @@ section.featured-posts p {
 }
 
 section.featured-posts .text-inner {
-  padding: 70px 30px;
+  padding: 20px 20px;
   height: 100%;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -748,7 +748,8 @@ section.featured-posts .post-header {
 }
 
 section.featured-posts .post-footer {
-  margin-top: 30px;
+  float: right;
+  margin-top: -10px;
 }
 
 /* Featured Posts Section Media Query ------------------------------------- */
