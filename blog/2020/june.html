@@ -48,7 +48,8 @@
 				  </a>
                 </header>
                 <p style="font-size:15px">Wangchunshu Zhou, Tao Ge, Ke Xu, Furu Wei, Ming Zhou</p>
-				<p style="color:black;font-size:17px;text-align:justify">Conventional Generative Adversarial Networks (GANs) for text generation tend to
+				<p style="color:black;font-size:17px;text-align:justify">
+				<b>Abstract: </b>Conventional Generative Adversarial Networks (GANs) for text generation tend to
 				have issues of reward sparsity and mode collapse that affect the quality and diversity
 				of generated samples. To address the issues, we propose a novel self-adversarial
 				learning (SAL) paradigm for improving GANs’ performance in text generation.
@@ -64,6 +65,17 @@
 				proposed approach substantially improves both the quality and the diversity, and
 				yields more stable performance compared to the previous GANs for text generation.
 				</p>
+				<p style="color:black;font-size:17px;text-align:justify">
+				<b>Notes: </b>Two GAN issues in text generation: (i) <b>Reward sparsity</b>, which is due to the fact that discriminator tends to learn much better than generator and thus easily recognizes generated samples as fakes; (ii) <b>Mode collapse</b>, which arises from the intrinsic nature of GANs and leads the adversarial models to only learn the limited patterns from the real samples.<br>
+				&emsp;This paper proposed a <b>self-adversarial learning</b> (SAL), which employs a <b>comparative discriminator</b> (a pairwise classifier) to assess whether the currently generated sample is better than its previously generated one. In the earlier training stage, this self-improvement reward mechanism makes it easier for the generator to receive non-sparse rewards due to the quality of generated samples is far below the real data; while in the later training stage, SAL can prevent a sample from keeping receiving high reward as the self-improvement for a popular mode will become very difficult, and thus avoid collapsing toward the limited patterns of real data.
+				</p>
+				<div class="widget tags"> 
+					<ul class="list-inline">
+					  <li class="list-inline-item"><a href="#" class="tag">#Self-adversarial Learning</a></li>
+					  <li class="list-inline-item"><a href="#" class="tag">#Generative Adversarial Nets</a></li>
+					  <li class="list-inline-item"><a href="#" class="tag">#Text Generation</a></li>
+					</ul>
+				</div>
                 <footer class="post-footer d-flex align-items-center">
                   <div class="comments">read in 8 June, 2020</div>
                 </footer>
