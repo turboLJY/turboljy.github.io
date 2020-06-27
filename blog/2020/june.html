@@ -85,6 +85,54 @@
           <!--<div class="image col-lg-4"><img src="../img/featured-pic-1.jpeg" alt="..."></div>-->
         </div>
 		<br>
+		<!-- Post-->
+        <div class="row d-flex align-items-stretch">
+          <div class="text col-lg-12">
+            <div class="text-inner d-flex align-items-center">
+              <div class="content">
+                <header class="post-header">
+                  <!--<div class="category"><a href="#">Business</a><a href="#">Technology</a></div>-->
+				  <a href="https://arxiv.org/abs/1609.05473" target="_blank">
+                    <b>SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient (AAAI 2017)</b>
+				  </a>
+                </header>
+                <p style="font-size:15px">Lantao Yu, Weinan Zhang, Jun Wang, Yong Yu</p>
+				<p style="color:black;font-size:17px;text-align:justify">
+				<b>Abstract: </b>As a new way of training generative models, Generative Adversarial Net (GAN) that uses a discriminative model to guide the training of the generative model has enjoyed considerable
+				success in generating real-valued data. However, it has limitations when the goal is for generating sequences of discrete tokens. A major reason lies in that the discrete outputs from the
+				generative model make it difficult to pass the gradient update
+				from the discriminative model to the generative model. Also,
+				the discriminative model can only assess a complete sequence,
+				while for a partially generated sequence, it is non-trivial to
+				balance its current score and the future one once the entire
+				sequence has been generated. In this paper, we propose a sequence generation framework, called SeqGAN, to solve the problems. Modeling the data generator as a stochastic policy in
+				reinforcement learning (RL), SeqGAN bypasses the generator
+				differentiation problem by directly performing gradient policy
+				update. The RL reward signal comes from the GAN discriminator judged on a complete sequence, and is passed back to the intermediate state-action steps using Monte Carlo search.
+				Extensive experiments on synthetic data and real-world tasks
+				demonstrate significant improvements over strong baselines.
+				</p>
+				<p style="color:black;font-size:17px;text-align:justify">
+				<b>Notes: </b>The maximum likelihood approaches suffer from <I>exposure bias</I> in the inference stage. A possible solution of the discrepancy between training and inference is to build the loss function on the entire generated sequence instead of each transition. Thus, Generative Adversarial Net (GAN) is a promising framework for alleviate this issue. However, applying GAN to generate sequence has two problems: (i) the discrete outputs from the generator make it difficult to pass the gradient update from the discriminator to the generator; (ii) the discriminator can only give the score/loss for an entire sequence when it has been generated.<br>
+				&emsp;To solve the problem that the gradient cannot pass back to the generator, this paper considered the sequence generation procedure as a sequential decision making process and regarded the generator as a stochastic parametrized policy, which can be trained via policy gradient. The state is the generated tokens so far and the action is the next token to be generated. In the policy gradient, this paper employed Monte Carlo (MC) search to approximate the state-action value for an intermediate state, which can be feedback to guide the learning of the generator.
+				</p>
+				<div class="widget tags"> 
+					<ul class="list-inline">
+					  <li class="list-inline-item"><a href="#" class="tag">#Generative Adversarial Nets</a></li>
+					  <li class="list-inline-item"><a href="#" class="tag">#Policy Gradient</a></li>
+					  <li class="list-inline-item"><a href="#" class="tag">#Monte Carlo Search</a></li>
+					  <li class="list-inline-item"><a href="#" class="tag">#Text Generation</a></li>
+					</ul>
+				</div>
+                <footer class="post-footer d-flex align-items-center">
+                  <div class="comments">read in 12 June, 2020</div>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <!--<div class="image col-lg-4"><img src="../img/featured-pic-1.jpeg" alt="..."></div>-->
+        </div>
+		<br>
         
       </div>
     </section>
