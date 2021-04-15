@@ -212,14 +212,6 @@ html {
 		
 	    <heading2><i>Preprint</i></heading2><br><br>
 		
-	       <!--<div onmouseover="document.getElementById('KG-Coherence').style.display = 'block';"onmouseout="document.getElementById('KG-Coherence').style.display='none';">
-              <a href=""><papertitle>Review Generation by Text Planning</papertitle></a><br>
-              <em>Under Review</em><br>
-              <a href="">pdf</a>  /  <a href="">code</a> 
-            </div>
-              <div id="KG-Coherence" style="display:none;text-align:justify">
-              </div><br>-->
-		
 	      <div onmouseover="document.getElementById('WenLan').style.display = 'block';"onmouseout="document.getElementById('WenLan').style.display='none';">
               <a href="https://arxiv.org/pdf/2103.06561.pdf">
                 <papertitle>WenLan: Bridging Vision and Language by Large-Scale Multi-Modal Pre-Training</papertitle></a><br>
@@ -272,6 +264,38 @@ html {
 		      Apache License 2.0 at the link https://github.com/RUCAIBox/TextBox.
               </div><br>
 		
+	    <heading2><i>2021</i></heading2><br><br>
+		
+	    <div onmouseover="document.getElementById('KG-Coherence').style.display = 'block';"onmouseout="document.getElementById('KG-Coherence').style.display='none';">
+              <a href=""><papertitle>Knowledge-based Review Generation by Coherence Enhanced Text Planning</papertitle></a><br>
+              <i><strong>Junyi Li</strong></i>,
+              <i>Wayne Xin Zhao</i>*,
+              <i>Zhicheng Wei</i>,
+	      <i>Nicholas Jing Yuan</i>,
+	      <i>Ji-Rong Wen</i>
+              <br>
+		<em>The 44th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)</em>, 2021 <br>
+              <a href="">pdf</a>  /  <a href="">code</a> 
+            </div>
+              <div id="KG-Coherence" style="display:none;text-align:justify">
+		  As a natural language generation task, it is challenging to generate informative and coherent review text. In order to enhance
+			the informativeness of the generated text, existing solutions typically learn to copy entities or triples from knowledge graphs (KGs).
+			However, they lack overall consideration to select and arrange the
+			incorporated knowledge, which tends to cause text incoherence. <br>
+		&emsp;To address the above issue, we focus on improving entity-centric
+			coherence of the generated reviews by leveraging the semantic structure of KGs. In this paper, we propose a novel Coherence Enhanced
+			Text Planning model (CETP) based on knowledge graphs (KGs) to
+			improve both global and local coherence for review generation. The
+			proposed model learns a two-level text plan for generating a document: (1) the document plan is modeled as a sequence of sentence
+			plans in order, and (2) the sentence plan is modeled as an entitybased subgraph from KG. Local coherence can be naturally enforced
+			by KG subgraphs through intra-sentence correlations between entities. For global coherence, we design a hierarchical self-attentive
+			architecture with both subgraph- and node-level attention to enhance the correlations between subgraphs. To our knowledge, we
+			are the first to utilize a KG-based text planning model to enhance
+			text coherence for review generation. Extensive experiments on
+			three datasets confirm the effectiveness of our model on improving
+			the content coherence of generated texts.
+              </div><br>
+		
 	    <heading2><i>2020</i></heading2><br><br>
 		
 	      <div onmouseover="document.getElementById('KG-Review').style.display = 'block';"onmouseout="document.getElementById('KG-Review').style.display='none';">
@@ -285,7 +309,7 @@ html {
 		 <i>Nicholas Jing Yuan</i>,
 	      <i>Ji-Rong Wen</i>
               <br>
-              <em>29th ACM International Conference on Information and Knowledge Management (CIKM)</em>, 2020 <br>
+              <em>The 29th ACM International Conference on Information and Knowledge Management (CIKM)</em>, 2020 <br>
               <a href="https://arxiv.org/pdf/2010.01480.pdf">pdf</a>  /  <a href="https://github.com/turboLJY/CapsGNN-Review-Generation">code</a> 
             </div>
               <div id="KG-Review" style="display:none;text-align:justify">
