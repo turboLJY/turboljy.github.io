@@ -242,6 +242,29 @@ html {
 		
 	    <heading2><i>2021</i></heading2><br><br>
 		
+	    <div onmouseover="document.getElementById('ThreeGAN').style.display = 'block';"onmouseout="document.getElementById('ThreeGAN').style.display='none';">
+              <a href="">
+                <papertitle>Generating Long and Coherent Text with Multi-Level Generative Adversarial Networks</papertitle></a><br>
+              <i>Tianyi Tang</i>,
+              <i><strong>Junyi Li</strong></i>,
+	      <i>Wayne Xin Zhao</i>*,
+	      <i>Ji-Rong Wen</i>
+              <br>
+	      <em>The 5th APWeb-WAIM International Joint Conference on Web and Big Data (APWeb-WAIM)</em>, 2021<br>
+              <a href="">pdf</a>  /  <a href="">code</a> 
+            </div>
+              <div id="ThreeGAN" style="display:none;text-align:justify">
+              	In this paper, we study the task of generating long and coherent text. In the literature, Generative Adversarial Nets (GAN) based methods 
+		      have been one of the mainstream approaches to generic text generation. We aim to improve two aspects of GAN-based methods in generic 
+		      text generation, namely long sequence optimization and semantic coherence enhancement. For this purpose, we propose a novel Multi-Level 
+		      Generative Adversarial Networks (MLGAN) for long and coherent text generation. Our approach explicitly models the text generation 
+		      process at three different levels, namely paragraph-, sentence- and word-level generation. At the top two levels, we generate 
+		      continuous paragraph vectors and sentence vectors as \emph{semantic sketches} to plan the entire content. While, at the bottom 
+		      level we generate discrete word tokens for realizing the sentences. Furthermore, we utilize a Conditional GAN architecture to 
+		      enhance the inter-sentence coherence by injecting paragraph vectors for sentence vector generation. Extensive experiments results 
+		      have demonstrated the effectiveness of the proposed model.
+              </div><br>
+		
 	    <div onmouseover="document.getElementById('TextBox').style.display = 'block';"onmouseout="document.getElementById('TextBox').style.display='none';">
               <a href="https://arxiv.org/pdf/2101.02046.pdf">
                 <papertitle>TextBox: A Unified, Modularized, and Extensible Framework for Text Generation</papertitle></a><br>
