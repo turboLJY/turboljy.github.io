@@ -249,6 +249,61 @@ html {
 		      and OpenAI CLIP on various downstream tasks.
               </div><br>
 		
+	    <heading2><i>2022</i></heading2><br><br>
+		
+            <div onmouseover="document.getElementById('ElitePLM').style.display = 'block';"onmouseout="document.getElementById('ElitePLM').style.display='none';">
+              <a href="">
+                <papertitle>ElitePLM: An Empirical Study on General Language Ability Evaluation of Pretrained Language Models</papertitle></a><br>
+              <i><strong>Junyi Li</strong></i>,
+	      <i>Tianyi Tang</i>,
+	      <i>Zheng Gong</i>,
+		    <i>Lixin Yang</i>,
+		    <i>Zhuohao Yu</i>,
+		    <i>Zhipeng Chen</i>,
+		    <i>Jingyuan Wang</i>,
+		<i>Wayne Xin Zhao</i>*,
+		    <i>Ji-Rong Wen</i>
+              <br>
+	      <em>The North American Chapter of the Association for Computational Linguistics (NAACL)</em>, 2022<br>
+              <a href="">pdf</a>  /  <a href="">code</a> 
+            </div>
+              <div id="ElitePLM" style="display:none;text-align:justify">
+              	Pretrained language models (PLMs) have dominated the majority of NLP tasks. While, little research has been conducted on 
+		      systematically evaluating the language abilities of PLMs. In this paper, we present a large-scale empirical study on 
+		      general language ability evaluation of PLMs (ElitePLM). In our study, we design four evaluation dimensions, i.e., memory, 
+		      comprehension, reasoning, and composition, to measure ten widely-used PLMs within five categories. Our empirical results 
+		      demonstrate that: (1) PLMs with varying training objectives and strategies are good at different ability tests; (2) fine-tuning 
+		      PLMs in downstream tasks is usually sensitive to the data size and distribution; (3) PLMs have excellent transferability between 
+		      similar tasks. Moreover, our final predicted results of PLMs can be reused as an open resource for more depth and granularity in 
+		      analyzing PLMs' language abilities. This paper can guide the future work to choose, apply, and design PLMs for specific tasks.
+              </div><br>
+		
+	    <div onmouseover="document.getElementById('PTG').style.display = 'block';"onmouseout="document.getElementById('PTG').style.display='none';">
+              <a href="">
+                <papertitle>Learning to Transfer Prompts for Text Generation</papertitle></a><br>
+              <i><strong>Junyi Li</strong></i>,
+	      <i>Tianyi Tang</i>,
+	      <i>Jian-Yun Nie</i>,
+	      <i>Ji-Rong Wen</i>,
+		<i>Wayne Xin Zhao</i>*
+              <br>
+	      <em>The North American Chapter of the Association for Computational Linguistics (NAACL)</em>, 2022<br>
+              <a href="">pdf</a>  /  <a href="">code</a> 
+            </div>
+              <div id="PTG" style="display:none;text-align:justify">
+              	Pretrained language models (PLMs) have made remarkable progress in text generation tasks via fine-tuning. However, it is difficult 
+		      to fine-tune PLMs in a data-scarce situation. Therefore, it is non-trivial to develop a general and lightweight model that 
+		      can adapt to various text generation tasks based on PLMs. Prompt-based learning offers a potential solution. There are two 
+		      major challenges for applying prompt-based methods to data-scarce text generation tasks in a transferable setting. First, 
+		      it is difficult to effectively transfer prompts for new tasks. Second, it is important to design effective transferring 
+		      strategy considering both task- and instance-level information. To address these issues, we propose a novel prompt-based 
+		      transfer learning approach for text generation called PTG. PTG learns a set of source prompts for various source generation 
+		      tasks and then transfers these prompts to perform target generation tasks through an adaptive attention mechanism 
+		      considering both task- and instance-level information. In extensive experiments, PTG yields competitive or better 
+		      results than fine-tuning methods. We will release our source prompts as an open-source library, which can be added or reused 
+		      to improve new generation tasks for future researches.
+              </div><br>
+		
 	    <heading2><i>2021</i></heading2><br><br>
 		
 	    <div onmouseover="document.getElementById('ThreeGAN').style.display = 'block';"onmouseout="document.getElementById('ThreeGAN').style.display='none';">
