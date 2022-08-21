@@ -202,6 +202,27 @@ html {
 		
 	    <heading2><i>Preprint</i></heading2><br><br>
 		
+	      <div onmouseover="document.getElementById('MVP').style.display = 'block';"onmouseout="document.getElementById('MVP').style.display='none';">
+              <a href="">
+                <papertitle>MVP: Multi-task Supervised Pre-training for Natural Language Generation</papertitle></a><br>
+              <i>Tianyi Tang</i>,
+	      <i><strong>Junyi Li</strong></i>,
+	      <i>Wayne Xin Zhao</i>*,
+              <i>Ji-Rong Wen</i>
+              <br>
+	      <a href="https://arxiv.org/pdf/2206.12131.pdf">pdf</a>  /  <a href="https://github.com/RUCAIBox/MVP">code</a>
+            </div>
+              <div id="MVP" style="display:none;text-align:justify">
+              	Pre-trained language models (PLMs) have achieved notable success in natural language generation (NLG) tasks. Up to now, most of 
+		      the PLMs are pre-trained in an unsupervised manner using large-scale general corpus. In the meanwhile, an increasing number 
+		      of models pre-trained with less labeled data showcase superior performance compared to unsupervised models. Motivated by the 
+		      success of supervised pre-training, we propose Multi-task superVised Pre-training (MVP) for natural language generation. 
+		      For pre-training the text generation model MVP, we collect a labeled pre-training corpus from 45 datasets over seven generation 
+		      tasks. For each task, we further pre-train specific soft prompts to stimulate the model capacity in performing a specific task. 
+		      Extensive experiments have demonstrated the effectiveness of our supervised pre-training in a number of NLG tasks, and our 
+		      general methods achieve state-of-the-art performance on 12 of 17 datasets.
+              </div><br>
+		
 	      <div onmouseover="document.getElementById('PLM4TG-Survey').style.display = 'block';"onmouseout="document.getElementById('PLM4TG-Survey').style.display='none';">
               <a href="https://arxiv.org/pdf/2201.05273.pdf">
                 <papertitle>A Survey of Pretrained Language Models Based Text Generation</papertitle></a><br>
@@ -251,16 +272,16 @@ html {
 		
 	    <heading2><i>2022</i></heading2><br><br>
 		
-	    <div onmouseover="document.getElementById('Context-Tuning').style.display = 'block';"onmouseout="document.getElementById('VL-Survey').style.display='none';">
+	    <div onmouseover="document.getElementById('Context-Tuning').style.display = 'block';"onmouseout="document.getElementById('Context-Tuning').style.display='none';">
               <a href="">
                 <papertitle>Context-Tuning: Learning Contextualized Prompts for Natural Language Generation</papertitle></a><br>
-              <i>Tianyi Tang</i>&dagger;,
+              <i>Tianyi Tang</i>,
 	      <i><strong>Junyi Li</strong></i>,
 	      <i>Wayne Xin Zhao</i>*,
               <i>Ji-Rong Wen</i>
               <br>
 	      <em>The 29th International Conference on Computational Linguistics (COLING)</em>, 2022<br>
-              <a href="">pdf</a> 
+              <a href="">pdf</a>  /  <a href="">code</a>
             </div>
               <div id="Context-Tuning" style="display:none;text-align:justify">
               	Recently, pretrained language models (PLMs) have made exceptional success in language generation. To leverage the rich knowledge encoded 
