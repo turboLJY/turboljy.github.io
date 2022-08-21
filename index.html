@@ -251,6 +251,29 @@ html {
 		
 	    <heading2><i>2022</i></heading2><br><br>
 		
+	    <div onmouseover="document.getElementById('Context-Tuning').style.display = 'block';"onmouseout="document.getElementById('VL-Survey').style.display='none';">
+              <a href="">
+                <papertitle>Context-Tuning: Learning Contextualized Prompts for Natural Language Generation</papertitle></a><br>
+              <i>Tianyi Tang</i>&dagger;,
+	      <i><strong>Junyi Li</strong></i>,
+	      <i>Wayne Xin Zhao</i>*,
+              <i>Ji-Rong Wen</i>
+              <br>
+	      <em>The 29th International Conference on Computational Linguistics (COLING)</em>, 2022<br>
+              <a href="">pdf</a> 
+            </div>
+              <div id="Context-Tuning" style="display:none;text-align:justify">
+              	Recently, pretrained language models (PLMs) have made exceptional success in language generation. To leverage the rich knowledge encoded 
+		      by PLMs, a simple yet powerful mechanism is to use prompts, in the form of either discrete tokens or continuous embeddings. 
+		      In existing studies, manual prompts are time-consuming and require domain expertise, while continuous prompts are typically 
+		      independent of the inputs. To address this issue, we propose a novel continuous prompting approach, called Context-Tuning, 
+		      to fine-tuning PLMs for natural language generation. Firstly, the prompts are derived based on the input text, so that they 
+		      can elicit useful knowledge from PLMs for generation. We refer to such prompts as contextualized prompts. Secondly, to further 
+		      enhance the relevance of the generated text to the inputs, we utilize continuous inverse prompting to refine the process of 
+		      natural language generation by modeling an inverse generation process from output to input. Moreover, we propose a lightweight 
+		      context-tuning, fine-tuning only 0.4% of parameters while retaining well performance.
+              </div><br>
+		
 	    <div onmouseover="document.getElementById('VL-Survey').style.display = 'block';"onmouseout="document.getElementById('VL-Survey').style.display='none';">
               <a href="https://arxiv.org/pdf/2202.10936.pdf">
                 <papertitle>A Survey of Vision-Language Pre-Trained Models</papertitle></a><br>
