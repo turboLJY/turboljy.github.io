@@ -272,6 +272,34 @@ html {
 		
 	    <heading2><i>2022</i></heading2><br><br>
 		
+	    <div onmouseover="document.getElementById('TextBox2.0').style.display = 'block';"onmouseout="document.getElementById('TextBox2.0').style.display='none';">
+              <a href="">
+                <papertitle>TextBox 2.0: A Text Generation Library with Pre-trained Language Models</papertitle></a><br>
+              <i>Tianyi Tang</i>&dagger;,
+              <i><strong>Junyi Li</strong></i>&dagger;,
+	      <i>Zhipeng Chen</i>&dagger;,
+	      <i>Yiwen Hu</i>,
+		<i>Zhuohao Yu</i>,
+		 <i>Wenxun Dai</i>,
+		 <i>Wayne Xin Zhao</i>*,
+		    <i>Jian-Yun Nie</i>,
+	      <i>Ji-Rong Wen</i>
+              <br>
+	      <em>The 2022 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>, 2022, System Demonstration <br>
+              <a href="">pdf</a>  /  <a href="https://github.com/RUCAIBox/TextBox">code</a> 
+            </div>
+              <div id="TextBox2.0" style="display:none;text-align:justify">
+              To facilitate research on text generation, this paper presents a comprehensive, unified, and standardized library, TextBox 2.0, 
+		      focusing on the use of pre-trained language models (PLMs). To be comprehensive, our library considers 13 common text 
+		      generation tasks and their corresponding 83 datasets and incorporates 36 PLMs covering general, translation, dialogue, 
+		      controllable, distilled, Chinese, and lightweight PLMs. We also implement 4 efficient training strategies and provide 4
+		      generation objectives for pre-training new PLMs from scratch. To be unified and standardized, we carefully design the 
+		      interfaces along the research pipeline (from data loading to training and evaluation), ensuring that each step can be 
+		      conducted in a unified, standard way. Though comprehensive and powerful, the use of our library is rather simple, 
+		      either by friendly Python API or command line. Besides, we perform extensive experiments to validate the effectiveness 
+		      of our library and provide useful methods to analyze the generated results. 
+              </div><br>
+		
 	    <div onmouseover="document.getElementById('Context-Tuning').style.display = 'block';"onmouseout="document.getElementById('Context-Tuning').style.display='none';">
               <a href="">
                 <papertitle>Context-Tuning: Learning Contextualized Prompts for Natural Language Generation</papertitle></a><br>
@@ -620,7 +648,7 @@ html {
 			<ul>
 			<li>Reviewer
 				<ul>
-					<li>Journal: TALLIP</li>
+					<li>Journal: TALLIP, ACM Computing Survey</li>
 					<li>Conference: AAAI 2021-22, IJCAI 2021-22, KDD 2021, EMNLP 2022, COLING 2022</li>
 				</ul>
 			</li>
