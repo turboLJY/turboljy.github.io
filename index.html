@@ -272,6 +272,32 @@ html {
 		
 	    <heading2><i>2022</i></heading2><br><br>
 		
+	    <div onmouseover="document.getElementById('Elmer').style.display = 'block';"onmouseout="document.getElementById('Elmer').style.display='none';">
+              <a href="">
+                <papertitle>ELMER: A Non-Autoregressive Pre-trained Language Model for Efficient and Effective Text Generation</papertitle></a><br>
+              <i><strong>Junyi Li</strong></i>,
+	      <i>Tianyi Tang</i>,
+	      <i>Wayne Xin Zhao</i>*,
+		    <i>Jian-Yun Nie</i>,
+	      <i>Ji-Rong Wen</i>
+              <br>
+	      <em>The 2022 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>, 2022<br>
+              <a href="">pdf</a>  /  <a href="">code</a> 
+            </div>
+              <div id="Elmer" style="display:none;text-align:justify">
+              We consider the text generation task under the approach of pre-trained language models (PLMs). Typically, an auto-regressive (AR) 
+		      paradigm is adopted for generating texts in a token-by-token manner.  Despite many advantages of AR generation, it has been 
+		      widely blamed for its inefficient inference. Therefore, non-autoregressive (NAR) models are proposed to generate all target 
+		      tokens simultaneously. However, NAR models usually generate texts of lower quality due to the absence of token dependency 
+		      in the output text. In this paper, we propose ELMER: an efficient and effective PLM for NAR text generation to explicitly 
+		      model the token dependency during NAR generation. By leveraging the early exit technique, ELMER enables the token generations 
+		      at different layers, according to their prediction confidence (a more confident token will exit at a lower layer). Besides, 
+		      we propose a novel Layer Permutation Language Modeling to pre-train ELMER by permuting the exit layer for each 
+		      token in sequences. Experiments on three text generation tasks show that ELMER significantly outperforms NAR models and 
+		      further narrows the performance gap with AR PLMs (\eg ELMER (29.92) vs BART (30.61) ROUGE-L in XSUM) while achieving 
+		      over 10x inference speedups.
+              </div><br>
+		
 	    <div onmouseover="document.getElementById('TextBox2.0').style.display = 'block';"onmouseout="document.getElementById('TextBox2.0').style.display='none';">
               <a href="">
                 <papertitle>TextBox 2.0: A Text Generation Library with Pre-trained Language Models</papertitle></a><br>
