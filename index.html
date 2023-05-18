@@ -233,25 +233,27 @@ html {
 		      we also summarize the available resources for developing LLMs and discuss the remaining issues for future directions.
               </div><br>
 		
-	      <div onmouseover="document.getElementById('MVP').style.display = 'block';"onmouseout="document.getElementById('MVP').style.display='none';">
-              <a href="https://arxiv.org/abs/2206.12131">
-                <papertitle>MVP: Multi-task Supervised Pre-training for Natural Language Generation</papertitle></a><br>
-              <i>Tianyi Tang</i>,
-	      <i><strong>Junyi Li</strong></i>,
-	      <i>Wayne Xin Zhao</i>*,
-              <i>Ji-Rong Wen</i>
-              <br>
-	      <a href="https://arxiv.org/pdf/2206.12131.pdf">pdf</a>  /  <a href="https://github.com/RUCAIBox/MVP">code</a>
+	  	<div onmouseover="document.getElementById('diffusion').style.display = 'block';"onmouseout="document.getElementById('diffusion').style.display='none';">
+              <a href="https://arxiv.org/pdf/2304.12519v2.pdf">
+                <papertitle>GlyphDiffusion: Text Generation as Image Generation</papertitle></a><br>
+	      <i><strong>Junyi Li</strong></i>, 
+			<i>Wayne Xin Zhao</i>*, 
+		      <i>Jian-Yun Nie</i>,
+			<i>Ji-Rong Wen</i><br>
+              <a href="https://arxiv.org/pdf/2304.12519v2.pdf">pdf</a> 
             </div>
-              <div id="MVP" style="display:none;text-align:justify">
-              	Pre-trained language models (PLMs) have achieved notable success in natural language generation (NLG) tasks. Up to now, most of 
-		      the PLMs are pre-trained in an unsupervised manner using large-scale general corpus. In the meanwhile, an increasing number 
-		      of models pre-trained with less labeled data showcase superior performance compared to unsupervised models. Motivated by the 
-		      success of supervised pre-training, we propose Multi-task superVised Pre-training (MVP) for natural language generation. 
-		      For pre-training the text generation model MVP, we collect a labeled pre-training corpus from 45 datasets over seven generation 
-		      tasks. For each task, we further pre-train specific soft prompts to stimulate the model capacity in performing a specific task. 
-		      Extensive experiments have demonstrated the effectiveness of our supervised pre-training in a number of NLG tasks, and our 
-		      general methods achieve state-of-the-art performance on 12 of 17 datasets.
+              <div id="diffusion" style="display:none;text-align:justify">
+              Diffusion models have become a new generative paradigm for text generation. Considering the discrete nature of text, 
+		      in this paper, we propose GlyphDiffusion, a novel diffusion approach for text generation via text-guided 
+		      image generation. Our key idea is to render the target text as a glyph image containing visual language 
+		      content. In this way, conditional text generation can be cast as a text-guided glyph image generation task, 
+		      and it is then natural to apply continuous diffusion models to discrete texts. Specially, we utilize a 
+		      cascaded architecture (\ie a base and a super-resolution diffusion model) to generate high-fidelity glyph 
+		      images based on the input text. Finally, we design a text grounding module to transform and refine the visual 
+		      language content from generated glyph images into the final texts. In experiments over four conditional text 
+		      generation tasks and two classes of metrics (\ie quality and diversity), GlyphDiffusion can achieve comparable 
+		      or even better results than several baselines, including pretrained language models. Our model also makes 
+		      significant improvements compared to the recent diffusion model.
               </div><br>
 		
 	      <div onmouseover="document.getElementById('PLM4TG-Survey').style.display = 'block';"onmouseout="document.getElementById('PLM4TG-Survey').style.display='none';">
@@ -300,6 +302,111 @@ html {
 		      pre-training our BriVL model. Extensive experiments demonstrate that the pre-trained BriVL model outperforms both UNITER 
 		      and OpenAI CLIP on various downstream tasks.
               </div><br>-->
+		
+	    <heading2><i>2023</i></heading2><br><br>
+		
+		<div onmouseover="document.getElementById('live').style.display = 'block';"onmouseout="document.getElementById('live').style.display='none';">
+              <a href="">
+                <papertitle>Learning to Imagine: Visually-Augmented Natural Language Generation</papertitle></a><br>
+              <i>Tianyi Tang</i>,
+	      <i>Yushuo Chen</i>,
+		<i>Yifan Du</i>,
+	      <i><strong>Junyi Li</strong></i>,
+	      <i>Wayne Xin Zhao</i>*,
+              <i>Ji-Rong Wen</i>
+              <br>
+	      <em>The 61st Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2023<br>
+	      <a href="">pdf</a>  /  <a href="">code</a>
+            </div>
+              <div id="live" style="display:none;text-align:justify">
+              	People often imagine relevant scenes to aid in the writing process. In this work, we aim to utilize visual 
+		      information for composition in the same manner as humans.  We propose a method, LIVE, that makes pre-trained 
+		      language models (PLMs) Learn to Imagine for Visually-augmented natural language gEneration. First, we imagine 
+		      the scene based on the text: we use a diffusion model to synthesize high-quality images conditioned on the 
+		      input and output texts. Second, we use determine whether the text can evoke the imagination in posterior. 
+		      Finally, our imagination is dynamic, and we conduct scene imagination for each sentence, rather than imagining 
+		      a scene for a entire paragraph. Technically, we propose a novel plug-and-play fusion layer to obtain 
+		      visually-augmented textual representations for each text. Our vision-text fusion layer is compatible with 
+		      Transformer-based architecture. We have conducted extensive experiments on four generation tasks using 
+		      BART and T5, and the automatic results and human evaluation demonstrate the effectiveness of our proposed method.
+              </div><br>
+		
+		<div onmouseover="document.getElementById('MVP').style.display = 'block';"onmouseout="document.getElementById('MVP').style.display='none';">
+              <a href="">
+                <papertitle>MVP: Multi-task Supervised Pre-training for Natural Language Generation</papertitle></a><br>
+              <i>Tianyi Tang</i>,
+	      <i><strong>Junyi Li</strong></i>,
+	      <i>Wayne Xin Zhao</i>*,
+              <i>Ji-Rong Wen</i>
+              <br>
+	      <em>Findings of The 61st Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2023<br>
+	      <a href="">pdf</a>  /  <a href="https://github.com/RUCAIBox/MVP">code</a>
+            </div>
+              <div id="MVP" style="display:none;text-align:justify">
+              	Pre-trained language models (PLMs) have achieved notable success in natural language generation (NLG) tasks. Up to now, most of 
+		      the PLMs are pre-trained in an unsupervised manner using large-scale general corpus. In the meanwhile, an increasing number 
+		      of models pre-trained with less labeled data showcase superior performance compared to unsupervised models. Motivated by the 
+		      success of supervised pre-training, we propose Multi-task superVised Pre-training (MVP) for natural language generation. 
+		      For pre-training the text generation model MVP, we collect a labeled pre-training corpus from 45 datasets over seven generation 
+		      tasks. For each task, we further pre-train specific soft prompts to stimulate the model capacity in performing a specific task. 
+		      Extensive experiments have demonstrated the effectiveness of our supervised pre-training in a number of NLG tasks, and our 
+		      general methods achieve state-of-the-art performance on 12 of 17 datasets.
+              </div><br>
+		
+		<div onmouseover="document.getElementById('Lamoc').style.display = 'block';"onmouseout="document.getElementById('Lamoc').style.display='none';">
+              <a href="">
+                <papertitle>Zero-shot Visual Question Answering with Language Model Feedback</papertitle></a><br>
+              <i>Yifan Du</i>,
+		<i><strong>Junyi Li</strong></i>,
+	      <i>Tianyi Tang</i>,
+	      <i>Wayne Xin Zhao</i>*,
+	      <i>Ji-Rong Wen</i>
+              <br>
+	      <em>Findings of The 61st Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2023<br>
+              <a href="">pdf</a>  /  <a href="">code</a> 
+            </div>
+              <div id="Lamoc" style="display:none;text-align:justify">
+              In this paper, we propose a novel language model guided captioning approach, Lamoc,  for knowledge-based visual 
+		      question answering~(VQA). Our approach employs the generated captions by a captioning model as the context 
+		      of an answer prediction model, which is a Pre-Trained Language model~(PLM). As the major contribution, we  
+		      leverage the guidance and feedback of the prediction model to improve the capability of the captioning model. 
+		      In this way, the captioning model can become aware of the task goal and information need from the PLM. 
+		      To develop our approach, we design two specific training stages, where the first stage adapts the captioning 
+		      model to the prediction model (selecting more suitable caption propositions for training) and the second stage 
+		      tunes the  captioning model according to the task goal (learning from feedback of the PLM). Extensive experiments 
+		      demonstrate the effectiveness of the proposed approach on the knowledge-based VQA task. Specifically, 
+		      on the challenging A-OKVQA dataset, Lamoc outperforms several competitive zero-shot methods and even achieves 
+		      comparable results to a fine-tuned VLP model.  
+              </div><br>
+		
+	<div onmouseover="document.getElementById('UniWeb').style.display = 'block';"onmouseout="document.getElementById('UniWeb').style.display='none';">
+              <a href="">
+                <papertitle>The Web Can Be Your Oyster for Improving Language Models</papertitle></a><br>
+              <i><strong>Junyi Li</strong></i>,
+	      <i>Tianyi Tang</i>,
+	      <i>Wayne Xin Zhao</i>*,
+			<i>Jingyuan Wang</i>,
+		    <i>Jian-Yun Nie</i>,
+	      <i>Ji-Rong Wen</i>
+              <br>
+	      <em>Findings of The 61st Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2023<br>
+              <a href="">pdf</a>  /  <a href="">code</a> 
+            </div>
+              <div id="UniWeb" style="display:none;text-align:justify">
+              Pretrained language models (PLMs) encode a large amount of world knowledge. However, as such knowledge is frozen at the 
+		      time of model training, the models become static and limited by the training data at that time. 
+		      In order to further improve the  capacity of PLMs for knowledge-intensive tasks, we consider augmenting PLMs with 
+		      the large-scale web using search engine. Unlike previous augmentation sources (\eg Wikipedia data dump), the web 
+		      provides  broader, more comprehensive and constantly updated information. In this paper, we present a web-augmented 
+		      PLM -- UniWeb, which is trained over 16 knowledge-intensive tasks in a unified text-to-text format. Instead of 
+		      simply using the retrieved contents from web, our approach has made two major improvements. Firstly, we propose 
+		      an adaptive search engine assisted learning method that can self-evaluate the confidence level of PLM’s predictions, 
+		      and adaptively determine when to refer to the web for more data, which can avoid useless or noisy augmentation 
+		      from web. Secondly, we  design a pretraining task, \ie continual knowledge learning, based on salient spans 
+		      prediction, to reduce the discrepancy between the encoded and retrieved knowledge. Experiments on a wide 
+		      range of knowledge-intensive tasks show that our model significantly outperforms previous retrieval-augmented methods.  
+              </div><br>
+		
 		
 	    <heading2><i>2022</i></heading2><br><br>
 		
@@ -706,7 +813,7 @@ html {
 			<li>Reviewer
 				<ul>
 					<li>Journal: TALLIP, ACM Computing Survey, Computational Intelligence</li>
-					<li>Conference: AAAI 2021-23, IJCAI 2021-23, KDD 2021, EMNLP 2022, COLING 2022</li>
+					<li>Conference: AAAI 2021-23, IJCAI 2021-23, KDD 2021, EMNLP 2022, COLING 2022, ACL 2023</li>
 				</ul>
 			</li>
 			<li>Chair
