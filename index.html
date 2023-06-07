@@ -233,6 +233,31 @@ html {
 		      we also summarize the available resources for developing LLMs and discuss the remaining issues for future directions.
               </div><br>
 		
+	<div onmouseover="document.getElementById('HaluEval').style.display = 'block';"onmouseout="document.getElementById('HaluEval').style.display='none';">
+              <a href="https://arxiv.org/abs/2305.11747">
+                <papertitle>HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models</papertitle>
+	      </a><br>
+              <i><strong>Junyi Li</strong></i>&dagger;,
+		<i>Xiaoxue Cheng</i>&dagger;,
+		<i>Wayne Xin Zhao</i>,
+	      <i>Jian-Yun Nie</i>,
+	      <i>Ji-Rong Wen</i>
+              <br>
+	      <a href="https://arxiv.org/abs/2305.11747.pdf">pdf</a>  /  <a href="https://github.com/turboLJY/HaluEval">code</a>
+            </div>
+              <div id="HaluEval" style="display:none;text-align:justify">
+              	Large language models (LLMs), such as ChatGPT, are prone to generate hallucinations, i.e., content that conflicts with 
+		      the source or cannot be verified by the factual knowledge. To understand what types of content and to which extent 
+		      LLMs are apt to hallucinate, we introduce the Hallucination Evaluation for Large Language Models (HaluEval) 
+		      benchmark, a large collection of generated and human-annotated hallucinated samples for evaluating the performance 
+		      of LLMs in recognizing hallucination. To generate these samples, we propose a ChatGPT-based two-step framework, 
+		      i.e., sampling-then-filtering. Besides, we also hire some human labelers to annotate the hallucinations in 
+		      ChatGPT responses. The empirical results suggest that ChatGPT is likely to generate hallucinated content in 
+		      specific topics by fabricating unverifiable information (i.e., about 11.4% user queries). Moreover, existing 
+		      LLMs face great challenges in recognizing the hallucinations in texts. While, our experiments also prove that 
+		      the hallucination recognition can be improved by providing external knowledge or adding reasoning steps.
+              </div><br>
+		
 	  	<div onmouseover="document.getElementById('diffusion').style.display = 'block';"onmouseout="document.getElementById('diffusion').style.display='none';">
               <a href="https://arxiv.org/pdf/2304.12519v2.pdf">
                 <papertitle>GlyphDiffusion: Text Generation as Image Generation</papertitle></a><br>
@@ -240,7 +265,7 @@ html {
 			<i>Wayne Xin Zhao</i>*, 
 		      <i>Jian-Yun Nie</i>,
 			<i>Ji-Rong Wen</i><br>
-              <a href="https://arxiv.org/pdf/2304.12519v2.pdf">pdf</a> 
+              <a href="https://arxiv.org/pdf/2304.12519v2.pdf">pdf</a> /  <a href="">code</a>
             </div>
               <div id="diffusion" style="display:none;text-align:justify">
               Diffusion models have become a new generative paradigm for text generation. Considering the discrete nature of text, 
@@ -287,7 +312,7 @@ html {
 		      <i>Chuhao Jin</i>, <i>Yuchong Sun</i>, <i>Shizhe Chen</i>, <i>Zhiwu Lu</i>*, <i>Zhicheng Dou</i>, <i>Qin Jin</i>, 
 		      <i>Yanyan Lan</i>, <i>Wayne Xin Zhao</i>, 
 		      <i>Ruihua Song</i>*, <i>Ji-Rong Wen</i>*<br>
-              <a href="https://arxiv.org/pdf/2103.06561.pdf">pdf</a>  /  <a href="">code</a> 
+              <a href="https://arxiv.org/pdf/2103.06561.pdf">pdf</a>  /  <a href="https://github.com/BAAI-WuDao/BriVl">code</a> 
             </div>
               <div id="WenLan" style="display:none;text-align:justify">
               Multi-modal pre-training models have been intensively explored to bridge vision and language in recent years. However, most of them 
@@ -306,7 +331,7 @@ html {
 	    <heading2><i>2023</i></heading2><br><br>
 		
 		<div onmouseover="document.getElementById('live').style.display = 'block';"onmouseout="document.getElementById('live').style.display='none';">
-              <a href="">
+              <a href="https://arxiv.org/abs/2305.16944v2">
                 <papertitle>Learning to Imagine: Visually-Augmented Natural Language Generation</papertitle></a><br>
               <i>Tianyi Tang</i>,
 	      <i>Yushuo Chen</i>,
@@ -316,7 +341,7 @@ html {
               <i>Ji-Rong Wen</i>
               <br>
 	      <em>The 61st Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2023<br>
-	      <a href="">pdf</a>  /  <a href="">code</a>
+	      <a href="https://arxiv.org/pdf/2305.16944v2.pdf">pdf</a>  /  <a href="https://github.com/RUCAIBox/LIVE">code</a>
             </div>
               <div id="live" style="display:none;text-align:justify">
               	People often imagine relevant scenes to aid in the writing process. In this work, we aim to utilize visual 
@@ -332,7 +357,7 @@ html {
               </div><br>
 		
 		<div onmouseover="document.getElementById('MVP').style.display = 'block';"onmouseout="document.getElementById('MVP').style.display='none';">
-              <a href="">
+              <a href="https://arxiv.org/abs/2206.12131">
                 <papertitle>MVP: Multi-task Supervised Pre-training for Natural Language Generation</papertitle></a><br>
               <i>Tianyi Tang</i>,
 	      <i><strong>Junyi Li</strong></i>,
@@ -340,7 +365,7 @@ html {
               <i>Ji-Rong Wen</i>
               <br>
 	      <em>Findings of The 61st Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2023<br>
-	      <a href="">pdf</a>  /  <a href="https://github.com/RUCAIBox/MVP">code</a>
+	      <a href="https://arxiv.org/abs/2206.12131.pdf">pdf</a>  /  <a href="https://github.com/RUCAIBox/MVP">code</a>
             </div>
               <div id="MVP" style="display:none;text-align:justify">
               	Pre-trained language models (PLMs) have achieved notable success in natural language generation (NLG) tasks. Up to now, most of 
@@ -354,7 +379,7 @@ html {
               </div><br>
 		
 		<div onmouseover="document.getElementById('Lamoc').style.display = 'block';"onmouseout="document.getElementById('Lamoc').style.display='none';">
-              <a href="">
+              <a href="https://arxiv.org/abs/2305.17006">
                 <papertitle>Zero-shot Visual Question Answering with Language Model Feedback</papertitle></a><br>
               <i>Yifan Du</i>,
 		<i><strong>Junyi Li</strong></i>,
@@ -363,7 +388,7 @@ html {
 	      <i>Ji-Rong Wen</i>
               <br>
 	      <em>Findings of The 61st Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2023<br>
-              <a href="">pdf</a>  /  <a href="">code</a> 
+              <a href="https://arxiv.org/abs/2305.17006.pdf">pdf</a>  /  <a href="https://github.com/RUCAIBox/LAMOC">code</a> 
             </div>
               <div id="Lamoc" style="display:none;text-align:justify">
               In this paper, we propose a novel language model guided captioning approach, Lamoc,  for knowledge-based visual 
@@ -380,7 +405,7 @@ html {
               </div><br>
 		
 	<div onmouseover="document.getElementById('UniWeb').style.display = 'block';"onmouseout="document.getElementById('UniWeb').style.display='none';">
-              <a href="">
+              <a href="https://arxiv.org/abs/2305.10998v2">
                 <papertitle>The Web Can Be Your Oyster for Improving Language Models</papertitle></a><br>
               <i><strong>Junyi Li</strong></i>,
 	      <i>Tianyi Tang</i>,
@@ -390,7 +415,7 @@ html {
 	      <i>Ji-Rong Wen</i>
               <br>
 	      <em>Findings of The 61st Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2023<br>
-              <a href="">pdf</a>  /  <a href="">code</a> 
+              <a href="https://arxiv.org/abs/2305.10998v2.pdf">pdf</a>  /  <a href="https://github.com/RUCAIBox/UniWeb">code</a> 
             </div>
               <div id="UniWeb" style="display:none;text-align:justify">
               Pretrained language models (PLMs) encode a large amount of world knowledge. However, as such knowledge is frozen at the 
@@ -411,7 +436,7 @@ html {
 	    <heading2><i>2022</i></heading2><br><br>
 		
 	    <div onmouseover="document.getElementById('Elmer').style.display = 'block';"onmouseout="document.getElementById('Elmer').style.display='none';">
-              <a href="https://arxiv.org/pdf/2210.13304.pdf">
+              <a href="https://arxiv.org/pdf/2210.13304">
                 <papertitle>ELMER: A Non-Autoregressive Pre-trained Language Model for Efficient and Effective Text Generation</papertitle></a><br>
               <i><strong>Junyi Li</strong></i>,
 	      <i>Tianyi Tang</i>,
@@ -437,7 +462,7 @@ html {
               </div><br>
 		
 	    <div onmouseover="document.getElementById('TextBox2.0').style.display = 'block';"onmouseout="document.getElementById('TextBox2.0').style.display='none';">
-              <a href="">
+              <a href="https://arxiv.org/abs/2212.13005">
                 <papertitle>TextBox 2.0: A Text Generation Library with Pre-trained Language Models</papertitle></a><br>
               <i>Tianyi Tang</i>&dagger;,
               <i><strong>Junyi Li</strong></i>&dagger;,
@@ -450,7 +475,7 @@ html {
 	      <i>Ji-Rong Wen</i>
               <br>
 	      <em>The 2022 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>, 2022, System Demonstration <br>
-              <a href="">pdf</a>  /  <a href="https://github.com/RUCAIBox/TextBox">code</a> 
+              <a href="https://arxiv.org/abs/2212.13005.pdf">pdf</a>  /  <a href="https://github.com/RUCAIBox/TextBox">code</a> 
             </div>
               <div id="TextBox2.0" style="display:none;text-align:justify">
               To facilitate research on text generation, this paper presents a comprehensive, unified, and standardized library, TextBox 2.0, 
