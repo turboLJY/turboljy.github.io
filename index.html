@@ -261,25 +261,6 @@ html {
 		      significant improvements compared to the recent diffusion model.
               </div><br>
 		
-	      <div onmouseover="document.getElementById('PLM4TG-Survey').style.display = 'block';"onmouseout="document.getElementById('PLM4TG-Survey').style.display='none';">
-              <a href="https://arxiv.org/pdf/2201.05273.pdf">
-                <papertitle>Pretrained Language Models Based Text Generation: A Survey</papertitle></a><br>
-	      <i><strong>Junyi Li</strong></i>&dagger;, <i>Tianyi Tang</i>&dagger;, <i>Wayne Xin Zhao</i>*, 
-		      <i>Jian-Yun Nie</i>, <i>Ji-Rong Wen</i><br>
-              <a href="https://arxiv.org/pdf/2201.05273.pdf">pdf</a> 
-            </div>
-              <div id="PLM4TG-Survey" style="display:none;text-align:justify">
-              Text Generation aims to produce plausible and readable text in human language from input data. The resurgence of deep learning has greatly 
-		      advanced this field by neural generation models, especially the paradigm of pretrained language models (PLMs). Grounding text generation 
-		      on PLMs is seen as a promising direction in both academia and industry. In this survey, we present the recent advances achieved in the 
-		      topic of PLMs for text generation. In detail, we begin with introducing three key points of applying PLMs to text generation: 1) how to 
-		      encode the input data as representations preserving input semantics which can be fused into PLMs; 2) how to design a universal and 
-		      performant architecture of PLMs served as generation models; and 3) how to optimize PLMs given the reference text and ensure the generated 
-		      text satisfying special text properties. Then, we figure out several challenges and future directions within each key point. Next, 
-		      we present a summary of various useful resources and typical text generation applications to work with PLMs. Finally, we conclude and 
-		      summarize the contribution of this survey.
-              </div><br>
-		
 	      <!--<div onmouseover="document.getElementById('WenLan').style.display = 'block';"onmouseout="document.getElementById('WenLan').style.display='none';">
               <a href="https://arxiv.org/pdf/2103.06561.pdf">
                 <papertitle>WenLan: Bridging Vision and Language by Large-Scale Multi-Modal Pre-Training</papertitle></a><br>
@@ -307,6 +288,54 @@ html {
 		      pre-training our BriVL model. Extensive experiments demonstrate that the pre-trained BriVL model outperforms both UNITER 
 		      and OpenAI CLIP on various downstream tasks.
               </div><br>-->
+
+	    <heading2><i>2024</i></heading2><br><br>
+
+	    <div onmouseover="document.getElementById('HaluEval2.0').style.display = 'block';"onmouseout="document.getElementById('HaluEval2.0').style.display='none';">
+              <a href="https://arxiv.org/abs/2401.03205">
+                <papertitle>The Dawn After the Dark: An Empirical Study on Factuality Hallucination in Large Language Models</papertitle>
+	      </a><br>
+              <i><strong>Junyi Li</strong></i>&dagger;,
+		<i>Jie Chen</i>,
+		    <i>Ruiyang Ren</i>,
+		    <i>Xiaoxue Cheng</i>,
+		<i>Wayne Xin Zhao</i>,
+	      <i>Jian-Yun Nie</i>,
+	      <i>Ji-Rong Wen</i>
+              <br>
+	      <em>arXiv</em>, 2024<br>
+	      <a href="https://arxiv.org/abs/2401.03205.pdf">pdf</a>  /  <a href="https://github.com/RUCAIBox/HaluEval-2.0">code</a>
+            </div>
+              <div id="HaluEval2.0" style="display:none;text-align:justify">
+              	In the era of large language models (LLMs), hallucination (i.e., the tendency to generate factually incorrect content) poses great challenge to 
+		      trustworthy and reliable deployment of LLMs in real-world applications. To tackle the LLM hallucination, three key questions should be well 
+		      studied: how to detect hallucinations (detection), why do LLMs hallucinate (source), and what can be done to mitigate them (mitigation). To 
+		      address these challenges, this work presents a systematic empirical study on LLM hallucination, focused on the the three aspects of hallucination 
+		      detection, source and mitigation. Specially, we construct a new hallucination benchmark HaluEval 2.0, and designs a simple yet effective detection 
+		      method for LLM hallucination. Furthermore, we zoom into the different training or utilization stages of LLMs and extensively analyze the potential 
+		      factors that lead to the LLM hallucination. Finally, we implement and examine a series of widely used techniques to mitigate the hallucinations in 
+		      LLMs. Our work has led to several important findings to understand the hallucination origin and mitigate the hallucinations in LLMs.
+              </div><br>
+
+	    <div onmouseover="document.getElementById('PLM4TG-Survey').style.display = 'block';"onmouseout="document.getElementById('PLM4TG-Survey').style.display='none';">
+              <a href="https://arxiv.org/pdf/2201.05273.pdf">
+                <papertitle>Pretrained Language Models Based Text Generation: A Survey</papertitle></a><br>
+	      <i><strong>Junyi Li</strong></i>&dagger;, <i>Tianyi Tang</i>&dagger;, <i>Wayne Xin Zhao</i>*, 
+		      <i>Jian-Yun Nie</i>, <i>Ji-Rong Wen</i><br>
+		 <em>ACM Computing Surveys</em>, 2024<br>
+              <a href="https://arxiv.org/pdf/2201.05273.pdf">pdf</a> 
+            </div>
+              <div id="PLM4TG-Survey" style="display:none;text-align:justify">
+              Text Generation aims to produce plausible and readable text in human language from input data. The resurgence of deep learning has greatly advanced this field, 
+		      in particular, with the help of neural generation models based on pre-trained language models (PLMs). Text generation based on PLMs is viewed as 
+		      a promising approach in both academia and industry. In this paper, we provide a survey on the utilization of PLMs in text generation. We begin 
+		      with introducing two key aspects of applying PLMs to text generation: 1) how to design an effective PLM to serve as the generation model; and 
+		      2) how to effectively optimize PLMs given the reference text and to ensure that the generated texts satisfy special text properties. Then, we 
+		      show the major challenges {that have arisen} in these aspects, as well as possible solutions for them. We also include a summary of various 
+		      useful resources and typical text generation applications based on PLMs. Finally, we highlight the future research directions which will further 
+		      improve these PLMs for text generation. This comprehensive survey is intended to help researchers interested in text generation problems to learn 
+		      the core concepts, the main techniques and the latest developments in this area based on PLMs.
+              </div><br>
 		
 	    <heading2><i>2023</i></heading2><br><br>
 
