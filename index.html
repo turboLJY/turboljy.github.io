@@ -291,11 +291,51 @@ html {
 
 	    <heading2><i>2024</i></heading2><br><br>
 
+	    <div onmouseover="document.getElementById('chainlm').style.display = 'block';"onmouseout="document.getElementById('chainlm').style.display='none';">
+              <a href="">
+                <papertitle>ChainLM: Empowering Large Language Models with Improved Chain-of-Thought Prompting</papertitle>
+	      </a><br>
+	      <i>Xiaoxue Cheng</i>,
+              <i><strong>Junyi Li</strong></i>,
+		<i>Wayne Xin Zhao</i>,
+	      <i>Ji-Rong Wen</i>
+              <br>
+	      <em>arXiv</em>, 2024<br>
+	      <a href="">pdf</a>  /  <a href="">code</a>
+            </div>
+              <div id="chainlm" style="display:none;text-align:justify">
+              	Chain-of-Thought (CoT) prompting can largely enhance the reasoning capabilities of large language models (LLMs), establishing itself as a primary approach to solve complex reasoning tasks. Existing CoT synthesis approaches usually focus on simpler reasoning tasks and result in low-quality and inconsistent CoT prompts.
+ In response to this challenge, we present an empirical investigation of CoT prompting and introduce CoTGenius, a novel framework designed for the automatic generation of superior CoT prompts. CoTGenius is developed based on three major evolution strategies, \ie complicate, diversify, and specify—alongside two filtering mechanisms: evolutionary success judgement and correctness verification. We further employ CoTGenius to create an extensive CoT dataset, and subsequently fine-tune the Llama 2-Chat 7B and 13B models on this dataset. We call the resulting model ChainLM. 
+ To deal with the cumulative error issue in reasoning steps, we propose a step-level debating method, wherein multiple debaters discuss each reasoning step to arrive at the correct answer. Extensive experiments demonstrate that our ChainLM models exhibit enhanced proficiency in addressing a spectrum of complex reasoning problems compared to existing models. 
+In addition, we conduct an in-depth analysis of the impact of data categories within CoTGenius on the model performance. 
+              </div><br>
+
+	    <div onmouseover="document.getElementById('Bamboo').style.display = 'block';"onmouseout="document.getElementById('bamboo').style.display='none';">
+              <a href="https://arxiv.org/abs/2309.13345">
+                <papertitle>BAMBOO: A Comprehensive Benchmark for Evaluating Long Text Modeling Capacities of Large Language Models</papertitle>
+	      </a><br>
+	      <i>Zican Dong</i>,
+		<i>Tianyi Tang</i>,
+              <i><strong>Junyi Li</strong></i>,
+		<i>Wayne Xin Zhao</i>,
+	      <i>Ji-Rong Wen</i>
+              <br>
+	      <em>arXiv</em>, 2024<br>
+	      <a href="https://arxiv.org/abs/2309.13345.pdf">pdf</a>  /  <a href="https://github.com/RUCAIBox/BAMBOO">code</a>
+            </div>
+              <div id="bamboo" style="display:none;text-align:justify">
+              	Large language models (LLMs) have achieved dramatic proficiency over NLP tasks with normal length. Recently, multiple studies have committed to extending the context length and enhancing the long text modeling capabilities of LLMs.
+To comprehensively evaluate the long context ability of LLMs, we propose \textbf{BAMBOO}, a multi-task long context benchmark. BAMBOO has been designed with four principles: comprehensive capacity evaluation, avoidance of data contamination, accurate automatic evaluation, and different length levels. 
+It consists of 10 datasets from 5 different long text understanding tasks, \ie question answering, hallucination detection, text sorting, language modeling, and code completion, to cover various domains and core capacities of LLMs.
+We conduct experiments with five widely-used long-context models and further discuss five key questions for long text research.
+In the end, we discuss problems of current long-context models and point out future directions for enhancing long text modeling capacities.
+              </div><br>
+
 	    <div onmouseover="document.getElementById('HaluEval2.0').style.display = 'block';"onmouseout="document.getElementById('HaluEval2.0').style.display='none';">
               <a href="https://arxiv.org/abs/2401.03205">
                 <papertitle>The Dawn After the Dark: An Empirical Study on Factuality Hallucination in Large Language Models</papertitle>
 	      </a><br>
-              <i><strong>Junyi Li</strong></i>&dagger;,
+              <i><strong>Junyi Li</strong></i>,
 		<i>Jie Chen</i>,
 		    <i>Ruiyang Ren</i>,
 		    <i>Xiaoxue Cheng</i>,
