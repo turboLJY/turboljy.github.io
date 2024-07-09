@@ -149,18 +149,12 @@ html {
         <name>Junyi Li (李军毅)</name><br>
         </p>
         <p style="text-align:justify">
-		I am a Ph.D. student jointly supervised by <a href="http://rali.iro.umontreal.ca/nie-site/jian-yun-nie-en/">Prof. Jian-Yun Nie</a> from <a href="https://diro.umontreal.ca/accueil/">DIRO</a>, 
-		<a href="https://www.umontreal.ca/en/">Universite de Montreal</a> and <a href="http://playbigdata.ruc.edu.cn/batmanfly/">Prof. Xin Zhao</a> from <a href="http://ai.ruc.edu.cn/english/index.htm">GSAI</a>, 
-		<a href="https://ruc.edu.cn">Renmin University of China</a>. I have a broad interest in natural language processing, with an emphasis on natural language generation (NLG), especially based on large language models (LLMs).
+		Junyi Li will be postdoctoral researcher at National University of Singapore, working with <a href="https://www.comp.nus.edu.sg/~nght/">Hwee Tou Ng</a>.
+		His research interests center around natural language processing (NLP) and multi-modal systems, with an emphasis on large language models (LLMs) and their applications. 
+		He received a doctoral degree from Renmin University of China, supervised by <a href="http://playbigdata.ruc.edu.cn/batmanfly/">Prof. Xin Zhao</a> and will 
+		obtain a second doctoral degree from Universite de Montreal, advised by <a href="http://rali.iro.umontreal.ca/nie-site/jian-yun-nie-en/">Prof. Jian-Yun Nie</a>.
 	</p>
-	<p>Email: junyi.li at umontreal dot ca / lijunyi at ruc dot edu dot cn</p>
-<!--         <p>
-        <i>There is no authority in science. No one can tell whether your research matters or not. Or how much it matters. All you can do is to contribute to human knowledge and hope it will matter. Even if it doesn't, it does. It eliminates an idea.</i><br>
-        </p>
-		<p align="right">
-		<i>-- Rich Sutton</i>
-		</p> -->
-
+	<p>Email: cheneyjunyi at gmail dot com / junyi.li at umontreal dot ca</p>
 
         <p align="center">
 			<a href="./images/resume.pdf" target="_blank">CV</a> &nbsp;/&nbsp;
@@ -179,8 +173,8 @@ html {
         <tbody>
 
         <tr><td>
-            <heading>Zhihu Posts</heading>
-            <ul>
+            <heading>News</heading>
+            <!--<ul>
 		    <li> <a href="https://zhuanlan.zhihu.com/p/461204074" target="_blank">最新综述：基于预训练语言模型的文本生成</a></li>
 		<li> <a href="https://zhuanlan.zhihu.com/p/565811159" target="_blank">预训练模型哪家强？提示迁移学习为文本生成提供新思路——NAACL 2022论文解读</a></li>
 	      <li> <a href="https://zhuanlan.zhihu.com/p/594600865" target="_blank">"妙笔"生花大升级！TextBox 2.0来啦！</a></li>
@@ -197,7 +191,17 @@ html {
 				  <li> <a href="https://zhuanlan.zhihu.com/p/29967933" target="_blank">从文本生成看Seq2Seq模型</a></li>
 				  <li> <a href="https://zhuanlan.zhihu.com/p/26604113" target="_blank">EMNLP 2014：利用RNN模型生成中国古代诗歌</a></li>
 				 </div>
-            </ul>
+            </ul>-->
+
+	    We publish HaluAgent, a biligual (Chinese and English) hallucination detection agent based on Baichuan2-Chat 7B. With only 2K examples for tuning, 
+		HaluAgent achieves performance comparable to or even higher than GPT-4. See more <a href="https://arxiv.org/pdf/2406.11277" target="_blank">details</a>.<br>
+
+	    We decompose positional vectors from hidden states of LLMs to explore the positional information within and beyond the context window for deciphering 
+		the underlying mechanism of LLMs. See more <a href="https://arxiv.org/pdf/2405.18009" target="_blank">details</a>.<br>
+
+	    Our two papers are accepted by COLING 2024. Congrats!<br>
+		
+	    Our two papers are accepted by ACL 2024 Main Conference and System Demonstrations. Congrats!
         </td></tr>
 
         <tr><td width="100%" valign="middle">
@@ -238,7 +242,7 @@ html {
               </div><br>
 		
 		
-	  	<div onmouseover="document.getElementById('diffusion').style.display = 'block';"onmouseout="document.getElementById('diffusion').style.display='none';">
+	  <!--<div onmouseover="document.getElementById('diffusion').style.display = 'block';"onmouseout="document.getElementById('diffusion').style.display='none';">
               <a href="https://arxiv.org/pdf/2304.12519v2.pdf">
                 <papertitle>GlyphDiffusion: Text Generation as Image Generation</papertitle></a><br>
 	      <i><strong>Junyi Li</strong></i>, 
@@ -259,7 +263,7 @@ html {
 		      generation tasks and two classes of metrics (\ie quality and diversity), GlyphDiffusion can achieve comparable 
 		      or even better results than several baselines, including pretrained language models. Our model also makes 
 		      significant improvements compared to the recent diffusion model.
-              </div><br>
+              </div><br>-->
 		
 	      <!--<div onmouseover="document.getElementById('WenLan').style.display = 'block';"onmouseout="document.getElementById('WenLan').style.display='none';">
               <a href="https://arxiv.org/pdf/2103.06561.pdf">
@@ -288,6 +292,58 @@ html {
 		      pre-training our BriVL model. Extensive experiments demonstrate that the pre-trained BriVL model outperforms both UNITER 
 		      and OpenAI CLIP on various downstream tasks.
               </div><br>-->
+
+	    <div onmouseover="document.getElementById('HaluAgent').style.display = 'block';"onmouseout="document.getElementById('HaluAgent').style.display='none';">
+              <a href="https://arxiv.org/abs/2406.11277">
+                <papertitle>Small Agent Can Also Rock! Empowering Small Language Models as Hallucination Detector</papertitle>
+	      </a><br>
+		<i>Xiaoxue Cheng</i>,
+              <i><strong>Junyi Li</strong></i>,
+		    <i>Wayne Xin Zhao</i>,
+		<i>Hongzhi Zhang</i>,
+		    <i>Fuzheng Zhang</i>,
+		    <i>Di Zhang</i>,
+		    <i>Kun Gai</i>,
+		<i>Ji-Rong Wen</i>
+              <br>
+	      <a href="https://arxiv.org/pdf/2406.11277">pdf</a>  /  <a href="https://github.com/RUCAIBox/HaluAgent">code</a>
+            </div>
+              <div id="HaluAgent" style="display:none;text-align:justify">
+              	Hallucination detection is a challenging task for large language models (LLMs), and existing studies heavily rely on powerful closed-source LLMs such as 
+		      GPT-4. In this paper, we propose an autonomous LLM-based agent framework, called HaluAgent, which enables relatively smaller LLMs (e.g. Baichuan2-Chat 7B) 
+		      to actively select suitable tools for detecting multiple hallucination types such as text, code, and mathematical expression. In HaluAgent, we integrate 
+		      the LLM, multi-functional toolbox, and design a fine-grained three-stage detection framework along with memory mechanism. To facilitate the effectiveness 
+		      of HaluAgent, we leverage existing Chinese and English datasets to synthesize detection trajectories for fine-tuning, which endows HaluAgent with the 
+		      capability for bilingual hallucination detection. Extensive experiments demonstrate that only using 2K samples for tuning LLMs, HaluAgent can perform 
+		      hallucination detection on various types of tasks and datasets, achieving performance comparable to or even higher than GPT-4 without tool enhancements 
+		      on both in-domain and out-of-domain datasets.
+              </div><br>
+
+	    <div onmouseover="document.getElementById('Position').style.display = 'block';"onmouseout="document.getElementById('Position').style.display='none';">
+              <a href="https://arxiv.org/abs/2406.11277">
+                <papertitle>Exploring Context Window of Large Language Models via Decomposed Positional Vectors</papertitle>
+	      </a><br>
+		<i>Zican Dong</i>,
+              <i><strong>Junyi Li</strong></i>,
+		    <i>Xin Men</i>,
+		    <i>Wayne Xin Zhao</i>,
+		<i>Bingning Wang</i>,
+		    <i>Zhen Tian</i>,
+		    <i>Weipeng Chen</i>,
+		    <i>Ji-Rong Wen</i>
+              <br>
+	      <a href="https://arxiv.org/pdf/2405.18009">pdf</a>  
+            </div>
+              <div id="Position" style="display:none;text-align:justify">
+              	Transformer-based large language models (LLMs) typically have a limited context window, resulting in significant performance degradation when processing 
+		      text beyond the length of the context window. Extensive studies have been proposed to extend the context window and achieve length extrapolation of 
+		      LLMs, but there is still a lack of in-depth interpretation of these approaches. In this study, we explore the positional information within and beyond
+		      the context window for deciphering the underlying mechanism of LLMs. By using a mean-based decomposition method, we disentangle positional vectors 
+		      from hidden states of LLMs and analyze their formation and effect on attention. Furthermore, when texts exceed the context window, we analyze the 
+		      change of positional vectors in two settings, i.e., direct extrapolation and context window extension. Based on our findings, we design two training-free
+		      context window extension methods, positional vector replacement and attention window extension. Experimental results show that our methods can 
+		      effectively extend the context window length.
+              </div><br>
 
 	    <heading2><i>2024</i></heading2><br><br>
 
@@ -927,6 +983,7 @@ In the end, we discuss problems of current long-context models and point out fut
 	<tr><td width="100%" valign="middle">
             <heading>Selected Awards and Honors</heading> <br><br>
 			<ul>
+			<li>Jingdong Special Scholarship (20 students/year), Renmin University of China, 2023</li>
 			<li>National Scholarship for Graduate Student (top 2% students), Ministry of Education of P.R.China, 2021</li>
 			<li>SIGIR Student Travel Grant (CIKM 2020)</li>
 			<li>National Scholarship for Graduate Student (top 2% students), Ministry of Education of P.R.China, 2019</li>
@@ -937,7 +994,7 @@ In the end, we discuss problems of current long-context models and point out fut
 	<tr><td width="100%" valign="middle">
             <heading>Education</heading> <br><br>
 			<ul>
-			<li>Ph.D. student of Artificial Intelligence, Renmin University of China & Universite de Montreal, 2020-present
+			<li>Ph.D. of Artificial Intelligence, Renmin University of China & Universite de Montreal, 2020-2024
 			</li>
 			<li>M.Sc. of Computer Application, Renmin University of China, 2018-2020
 			</li>
