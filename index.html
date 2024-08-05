@@ -149,12 +149,11 @@ html {
         <name>Junyi Li (李军毅)</name><br>
         </p>
         <p style="text-align:justify">
-		I am a postdoctoral researcher at National University of Singapore, working with <a href="https://www.comp.nus.edu.sg/~nght/">Hwee Tou Ng</a>.
-		My research interests center around natural language processing (NLP) and multi-modal systems, with an emphasis on large language models (LLMs) and their applications. 
-		I received PhD degree from Renmin University of China, supervised by <a href="http://playbigdata.ruc.edu.cn/batmanfly/">Prof. Xin Zhao</a> and will 
-		obtain a second PhD degree from Université de Montréal, advised by <a href="http://rali.iro.umontreal.ca/nie-site/jian-yun-nie-en/">Prof. Jian-Yun Nie</a>.
+		I am a postdoctoral researcher of <a href="https://www.comp.nus.edu.sg/">School of Computing</a> at <a href="https://nus.edu.sg/">National University of Singapore</a>, working with <a href="https://www.comp.nus.edu.sg/~nght/">Hwee Tou Ng</a>.
+		Previously, I received PhD degree in Gaoling School of Artificial Intelligence from Renmin University of China in 2024, supervised by <a href="http://playbigdata.ruc.edu.cn/batmanfly/">Prof. Xin Zhao</a> and will 
+		obtain a second PhD degree in Computer Science from Université de Montréal, advised by <a href="http://rali.iro.umontreal.ca/nie-site/jian-yun-nie-en/">Prof. Jian-Yun Nie</a>.
 	</p>
-	<p>Email: cheneyjunyi at gmail dot com / junyi.li at umontreal dot ca</p>
+	<p>Email: junyi_cs at nus dot edu dot sg / cheneyjunyi at gmail dot com</p>
 
         <p align="center">
 			<a href="./images/resume.pdf" target="_blank">CV</a> &nbsp;/&nbsp;
@@ -171,6 +170,24 @@ html {
 
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
         <tbody>
+
+	<tr><td>
+            <heading>Research</heading><br><br>
+
+	    My research interests lie broadly in natural language processing and multi-modal systems, with an emphasis on large language models (LLMs). I am always excited about building reliable, trustable, and adaptable AI systems.<br>
+
+	    <ul>
+		<li><strong>Hallucination in Large Language Models:</strong> Construct comprehensive and automatic hallucination evaluation benchmark (<a href="https://arxiv.org/abs/2305.11747">HaluEval</a>, <a href="https://arxiv.org/abs/2401.03205">HaluEval 2.0</a>), 
+			empirically explore the source of hallucinations in LLMs (<a href="https://arxiv.org/abs/2401.03205">HaluEval 2.0</a>), build powerful hallucination detection agent (<a href="https://arxiv.org/abs/2406.11277">HaluAgent</a>) and 
+			develop effective hallucination mitigation techniques.</li>
+		<li><strong>Retrieval-Augmented Generation:</strong> Build robust and up-to-date RAG systems (<a href="https://arxiv.org/abs/2305.10998v2">UniWeb</a>), effective and adaptive retrieval algorithms (<a href="https://arxiv.org/abs/2402.17497">REAR</a>) and
+			integrate retrieval with language models to achieve optimal synergy.</li>
+		<li><strong>Adaptable Large Language Models:</strong> Domain adaptation of LLMs (<a href="https://arxiv.org/abs/2407.10804v1">Mix-CPT</a>) and long context adaptation (<i>i.e.,</i> long context evaluation benchmark without data contamination <a href="https://arxiv.org/abs/2309.13345">BAMBOO</a>, empirically explore the underlying mechanism of positional vectors <a href="https://arxiv.org/abs/2405.18009">arXiv</a> 
+			and develop effective context extension algorithms for LLMs).</li>
+		<li>I am also interested in research that advances the complex reasoning capability of (multi-modal) AI systems to facilitate their understanding on our real world (<a href="https://arxiv.org/abs/2305.17006">LAMOC</a>, <a href="https://arxiv.org/abs/2403.14312">ChainLM</a>).</li>
+	   </ul>
+	    
+        </td></tr>
 
         <tr><td>
             <heading>News</heading><br><br>
@@ -351,7 +368,7 @@ html {
               </div><br>
 
 	    <div onmouseover="document.getElementById('Position').style.display = 'block';"onmouseout="document.getElementById('Position').style.display='none';">
-              <a href="https://arxiv.org/abs/2406.11277">
+              <a href="https://arxiv.org/abs/2405.18009">
                 <papertitle>Exploring Context Window of Large Language Models via Decomposed Positional Vectors</papertitle>
 	      </a><br>
 		<i>Zican Dong</i>&dagger;,
@@ -374,6 +391,31 @@ html {
 		      change of positional vectors in two settings, i.e., direct extrapolation and context window extension. Based on our findings, we design two training-free
 		      context window extension methods, positional vector replacement and attention window extension. Experimental results show that our methods can 
 		      effectively extend the context window length.
+              </div><br>
+
+	    <div onmouseover="document.getElementById('REAR').style.display = 'block';"onmouseout="document.getElementById('REAR').style.display='none';">
+              <a href="https://arxiv.org/abs/2402.17497">
+                <papertitle>REAR: A Relevance-Aware Retrieval-Augmented Framework for Open-Domain Question Answering</papertitle>
+	      </a><br>
+		<i>Yuhao Wang</i>,
+		<i>Ruiyang Ren</i>,
+              <i><strong>Junyi Li</strong></i>&dagger;,
+		    <i>Wayne Xin Zhao</i>*,
+		<i>Jing Liu</i>,
+		    <i>Ji-Rong Wen</i>
+              <br>
+	      <a href="https://arxiv.org/pdf/2402.17497">pdf</a>  /  <a href="https://github.com/RUCAIBox/REAR">code</a>
+            </div>
+              <div id="REAR" style="display:none;text-align:justify">
+              	Considering the limited internal parametric knowledge, retrieval-augmented generation (RAG) has been widely used to extend the knowledge scope of large
+		      language models (LLMs). Despite the extensive efforts on RAG research, in existing methods, LLMs cannot precisely assess the relevance of retrieved
+		      documents, thus likely leading to misleading or even incorrect utilization of external knowledge (i.e., retrieved documents). To address this issue,
+		      in this paper, we propose REAR, a RElevance-Aware Retrieval-augmented approach for open-domain question answering (QA). As the key motivation, we aim
+		      to enhance the self-awareness of source relevance for LLMs, so as to adaptively utilize external knowledge in RAG systems. Specially, we develop a
+		      new architecture for LLM based RAG system, by incorporating a specially designed rank head that precisely assesses the relevance of retrieved documents.
+		      Furthermore, we propose an improved training method based on bi-granularity relevance fusion and noise-resistant training. By combining the improvements
+		      in both architecture and training, our proposed REAR can better utilize external knowledge by effectively perceiving the relevance of retrieved documents. 
+		      Experiments on four open-domain QA tasks show that REAR significantly outperforms previous a number of competitive RAG approaches. 
               </div><br>
 
 	    <heading2><i>2024</i></heading2><br><br>
@@ -405,7 +447,7 @@ html {
               </div><br>
 
 	    <div onmouseover="document.getElementById('chainlm').style.display = 'block';"onmouseout="document.getElementById('chainlm').style.display='none';">
-              <a href="">
+              <a href="https://arxiv.org/abs/2403.14312">
                 <papertitle>ChainLM: Empowering Large Language Models with Improved Chain-of-Thought Prompting</papertitle>
 	      </a><br>
 	      <i>Xiaoxue Cheng</i>,
@@ -414,7 +456,7 @@ html {
 	      <i>Ji-Rong Wen</i>
               <br>
 	      <em>The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING)</em>, 2024<br>
-	      <a href="">pdf</a>  /  <a href="">code</a>
+	      <a href="https://arxiv.org/pdf/2403.14312">pdf</a>  /  <a href="https://github.com/RUCAIBox/ChainLM">code</a>
             </div>
               <div id="chainlm" style="display:none;text-align:justify">
               	Chain-of-Thought (CoT) prompting can largely enhance the reasoning capabilities of large language models (LLMs), establishing itself as a primary approach to solve complex reasoning tasks. Existing CoT synthesis approaches usually focus on simpler reasoning tasks and result in low-quality and inconsistent CoT prompts.
@@ -550,7 +592,7 @@ In the end, we discuss problems of current long-context models and point out fut
 	      <i>Ji-Rong Wen</i>
               <br>
 	      <em>Findings of The 61st Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2023<br>
-              <a href="https://arxiv.org/abs/2305.17006.pdf">pdf</a>  /  <a href="https://github.com/RUCAIBox/LAMOC">code</a> 
+              <a href="https://arxiv.org/pdf/2305.17006">pdf</a>  /  <a href="https://github.com/RUCAIBox/LAMOC">code</a> 
             </div>
               <div id="Lamoc" style="display:none;text-align:justify">
               In this paper, we propose a novel language model guided captioning approach, Lamoc,  for knowledge-based visual 
