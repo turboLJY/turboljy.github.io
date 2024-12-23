@@ -312,6 +312,52 @@ html {
 		      and OpenAI CLIP on various downstream tasks.
               </div><br>-->
 
+            <div onmouseover="document.getElementById('Think&Cite').style.display = 'block';"onmouseout="document.getElementById('Think&Cite').style.display='none';">
+              <a href="https://arxiv.org/abs/2412.14860">
+                <papertitle>Think&Cite: Improving Attributed Text Generation with Self-Guided Tree Search and Progress Reward Modeling</papertitle>
+	      </a><br>
+		<i><strong>Junyi Li</strong></i>,
+		    <i>Hwee Tou Ng</i>
+              <br>
+	      <a href="https://arxiv.org/pdf/2412.14860">pdf</a>  /  <a href="">code</a>
+            </div>
+              <div id="Think&Cite" style="display:none;text-align:justify">
+              	Despite their outstanding capabilities, large language models (LLMs) are prone to hallucination and producing factually incorrect information. 
+		      This challenge has spurred efforts in attributed text generation, which prompts LLMs to generate content with supporting evidence. 
+		      In this paper, we propose a novel framework, called Think&Cite, and formulate attributed text generation as a multi-step reasoning problem 
+		      integrated with search. Specifically, we propose Self-Guided Monte Carlo Tree Search (SG-MCTS), which capitalizes on the self-reflection 
+		      capability of LLMs to reflect on the intermediate states of MCTS for guiding the tree expansion process. To provide reliable and comprehensive 
+		      feedback, we introduce Progress Reward Models to measure the progress of tree search from the root to the current state from two aspects, 
+		      i.e., generation and attribution progress. We conduct extensive experiments on three datasets and the results show that our approach significantly 
+		      outperforms baseline approaches.
+              </div><br>
+
+	    <div onmouseover="document.getElementById('RAG-Star').style.display = 'block';"onmouseout="document.getElementById('RAG-Star').style.display='none';">
+              <a href="https://arxiv.org/abs/2412.12881">
+                <papertitle>RAG-Star: Enhancing Deliberative Reasoning with Retrieval Augmented Verification and Refinement</papertitle>
+	      </a><br>
+		<i>Jinhao Jiang</i>&dagger;,
+		<i>Jiayi Chen</i>&dagger;,
+              <i><strong>Junyi Li</strong></i>&dagger;,
+		    <i>Ruiyang Ren</i>,
+		    <i>Shijie Wang</i>,
+		    <i>Wayne Xin Zhao</i>*,
+		<i>Yang Song</i>,
+		    <i>Tao Zhang</i>
+              <br>
+	      <a href="https://arxiv.org/pdf/2412.12881">pdf</a>  /  <a href="">code</a>
+            </div>
+              <div id="RAG-Star" style="display:none;text-align:justify">
+              	Existing large language models (LLMs) show exceptional problem-solving capabilities but might struggle with complex reasoning tasks. Despite 
+		      the successes of chain-of-thought and tree-based search methods, they mainly depend on the internal knowledge of LLMs to search over 
+		      intermediate reasoning steps, limited to dealing with simple tasks involving fewer reasoning steps. In this paper, we propose RAG-Star, 
+		      a novel RAG approach that integrates the retrieved information to guide the tree-based deliberative reasoning process that relies on the 
+		      inherent knowledge of LLMs. By leveraging Monte Carlo Tree Search, RAG-Star iteratively plans intermediate sub-queries and answers for 
+		      reasoning based on the LLM itself. To consolidate internal and external knowledge, we propose an retrieval-augmented verification that 
+		      utilizes query- and answer-aware reward modeling to provide feedback for the inherent reasoning of LLMs. Our experiments involving 
+		      Llama-3.1-8B-Instruct and GPT-4o demonstrate that RAG-Star significantly outperforms previous RAG and reasoning methods.
+              </div><br>
+
 	    <div onmouseover="document.getElementById('MixCPT').style.display = 'block';"onmouseout="document.getElementById('MixCPT').style.display='none';">
               <a href="https://arxiv.org/abs/2407.10804v1">
                 <papertitle>Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment</papertitle>
