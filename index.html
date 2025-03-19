@@ -331,6 +331,76 @@ html {
 		      outperforms baseline approaches.
               </div><br>
 
+		<div onmouseover="document.getElementById('LongReD').style.display = 'block';"onmouseout="document.getElementById('LongReD').style.display='none';">
+              <a href="https://arxiv.org/abs/2502.07365">
+                <papertitle>LongReD: Mitigating Short-Text Degradation of Long-Context Large Language Models via Restoration Distillation</papertitle>
+	      </a><br>
+		<i>Zican Dong</i>&dagger;,
+		<i><strong>Junyi Li</strong></i>&dagger;,
+		<i>Jinhao Jiang, Mingyu Xu, Wayne Xin Zhao*, Bingning Wang, Weipeng Chen</i>
+              <br>
+	      <a href="https://arxiv.org/pdf/2502.07365">pdf</a>  /  <a href="https://github.com/RUCAIBox/LongReD">code</a>
+            </div>
+              <div id="LongReD" style="display:none;text-align:justify">
+              	Large language models (LLMs) have gained extended context windows through scaling positional encodings and lightweight continual pre-training. 
+		      However, this often leads to degraded performance on short-text tasks, while the reasons for this degradation remain insufficiently explored. 
+		      In this work, we identify two primary factors contributing to this issue: distribution drift in hidden states and attention scores, and 
+		      catastrophic forgetting during continual pre-training. To address these challenges, we propose Long Context Pre-training with Restoration 
+		      Distillation (LongReD), a novel approach designed to mitigate short-text performance degradation through minimizing the distribution discrepancy 
+		      between the extended and original models. Besides training on long texts, LongReD distills the hidden state of selected layers from the original 
+		      model on short texts. Additionally, LongReD also introduces a short-to-long distillation, aligning the output distribution on short texts with 
+		      that on long texts by leveraging skipped positional indices. Experiments on common text benchmarks demonstrate that LongReD effectively preserves 
+		      the model's short-text performance while maintaining comparable or even better capacity to handle long texts than baselines. 
+              </div><br>
+
+		<div onmouseover="document.getElementById('HaluSearch').style.display = 'block';"onmouseout="document.getElementById('HaluSearch').style.display='none';">
+              <a href="https://arxiv.org/abs/2501.01306">
+                <papertitle>Think More, Hallucinate Less: Mitigating Hallucinations via Dual Process of Fast and Slow Thinking</papertitle>
+	      </a><br>
+		<i>Xiaoxue Cheng</i>&dagger;,
+		<i><strong>Junyi Li</strong></i>&dagger;,
+		<i>Wayne Xin Zhao*, Ji-Rong Wen</i>
+              <br>
+	      <a href="https://arxiv.org/pdf/2501.01306">pdf</a>  /  <a href="https://github.com/RUCAIBox/LongReD">code</a>
+            </div>
+              <div id="HaluSearch" style="display:none;text-align:justify">
+              	Large language models (LLMs) demonstrate exceptional capabilities, yet still face the hallucination issue. Typical text generation approaches adopt an 
+		      auto-regressive generation without deliberate reasoning, which often results in untrustworthy and factually inaccurate responses. In this paper, 
+		      we propose HaluSearch, a novel framework that incorporates tree search-based algorithms (e.g. MCTS) to enable an explicit slow thinking generation 
+		      process for mitigating hallucinations of LLMs during inference. Specifically, HaluSearch frames text generation as a step-by-step reasoning process, 
+		      using a self-evaluation reward model to score each generation step and guide the tree search towards the most reliable generation pathway for fully 
+		      exploiting the internal knowledge of LLMs. To balance efficiency and quality, we introduce a hierarchical thinking system switch mechanism inspired 
+		      by the dual process theory in cognitive science, which dynamically alternates between fast and slow thinking modes at both the instance and step levels, 
+		      adapting to the complexity of questions and reasoning states. We conduct extensive experiments on both English and Chinese datasets and the results 
+		      show that our approach significantly outperforms baseline approaches. 
+              </div><br>
+
+		<div onmouseover="document.getElementById('HG-MCTS').style.display = 'block';"onmouseout="document.getElementById('HG-MCTS').style.display='none';">
+              <a href="https://arxiv.org/abs/2502.04751">
+                <papertitle>Holistically Guided Monte Carlo Tree Search for Intricate Information Seeking</papertitle>
+	      </a><br>
+		<i>Ruiyang Ren</i>&dagger;,
+		<i>Yuhao Wang</i>&dagger;,
+		<i><strong>Junyi Li</strong></i>&dagger;,
+		<i>Jinhao Jiang, Wayne Xin Zhao*, Wenjie Wang, Tat-Seng Chua</i>
+              <br>
+	      <a href="https://arxiv.org/pdf/2502.04751">pdf</a>  /  <a href="https://github.com/RUCAIBox/LongReD">code</a>
+            </div>
+              <div id="HG-MCTS" style="display:none;text-align:justify">
+              	In the era of vast digital information, the sheer volume and heterogeneity of available information present significant challenges for intricate information 
+		      seeking. Users frequently face multistep web search tasks that involve navigating vast and varied data sources. This complexity demands every step 
+		      remains comprehensive, accurate, and relevant. However, traditional search methods often struggle to balance the need for localized precision with 
+		      the broader context required for holistic understanding, leaving critical facets of intricate queries underexplored. In this paper, we introduce an 
+		      LLM-based search assistant that adopts a new information seeking paradigm with holistically guided Monte Carlo tree search (HG-MCTS). We reformulate 
+		      the task as a progressive information collection process with a knowledge memory and unite an adaptive checklist with multi-perspective reward modeling 
+		      in MCTS. The adaptive checklist provides explicit sub-goals to guide the MCTS process toward comprehensive coverage of complex user queries. 
+		      Simultaneously, our multi-perspective reward modeling offers both exploration and retrieval rewards, along with progress feedback that tracks completed 
+		      and remaining sub-goals, refining the checklist as the tree search progresses. By striking a balance between localized tree expansion and global guidance, 
+		      HG-MCTS reduces redundancy in search paths and ensures that all crucial aspects of an intricate query are properly addressed. Extensive experiments on 
+		      real-world intricate information seeking tasks demonstrate that HG-MCTS acquires thorough knowledge collections and delivers more accurate final responses 
+		      compared with existing baselines.
+              </div><br>
+
 	    <heading2><i>2025</i></heading2><br><br>
 
 		<div onmouseover="document.getElementById('MixCPT').style.display = 'block';"onmouseout="document.getElementById('MixCPT').style.display='none';">
@@ -359,6 +429,31 @@ html {
 		      Subsequently, leveraging the knowledge and capabilities acquired during continual pre-training, we efficiently perform instruction tuning and 
 		      alignment with a few general training samples to achieve format alignment. Extensive experiments demonstrate that our proposed Mix-CPT framework 
 		      can simultaneously improve the task-solving capabilities of LLMs on the target and general domains compared to the traditional adaptation methods.
+              </div><br>
+
+		<div onmouseover="document.getElementById('ICL').style.display = 'block';"onmouseout="document.getElementById('ICL').style.display='none';">
+              <a href="https://openreview.net/forum?id=htDczodFN5">
+                <papertitle>Investigating the Pre-Training Dynamics of In-Context Learning: Task Recognition vs. Task Learning</papertitle>
+	      </a><br>
+		<i>Xiaolei Wang</i>,
+		<i>Xinyu Tang</i>,
+              <i><strong>Junyi Li</strong></i>,
+		    <i>Wayne Xin Zhao</i>*,
+		<i>Ji-Rong Wen</i>
+              <br>
+		<em>The Thirteenth International Conference on Learning Representations (ICLR)</em>, 2025<br>
+	      <a href="https://openreview.net/pdf?id=htDczodFN5">pdf</a>  /  <a href="https://github.com/RUCAIBox/Competitive-ICL">code</a>
+            </div>
+              <div id="ICL" style="display:none;text-align:justify">
+              	The emergence of in-context learning (ICL) is potentially attributed to two major abilities: task recognition (TR) for recognizing the 
+		      task from demonstrations and utilizing pre-trained priors, and task learning (TL) for learning from demonstrations. However, 
+		      relationships between the two abilities and how such relationships affect the emergence of ICL is unclear. In this paper, we take 
+		      the first step by examining the pre-training dynamics of the emergence of ICL. With carefully designed metrics, we find that these 
+		      two abilities are, in fact, competitive during pre-training. Moreover, we observe a negative correlation between the competition and 
+		      the performance of ICL. Further analysis of common pre-training factors (i.e., model size, dataset size, and data curriculum) demonstrates 
+		      possible ways to regulate the competition. Based on these insights, we propose a simple yet effective method to better integrate these 
+		      two abilities for ICL at inference time. Through adaptive ensemble learning, the performance of ICL can be significantly boosted, 
+		      enabling two small models to outperform a larger one with more than twice the parameters.
               </div><br>
 
 		<div onmouseover="document.getElementById('RAG-Star').style.display = 'block';"onmouseout="document.getElementById('RAG-Star').style.display='none';">
