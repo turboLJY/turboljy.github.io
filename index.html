@@ -212,6 +212,8 @@ html {
 				 </div>
             </ul>-->
 
+	    Our five papers are accepted by ACL 2025 and Findings of ACL. Congrats!<br><br> 
+
 	    Our three papers on domain adpatation, ICL analysis, and RAG enhancement are accepted by ICLR 2025 and NAACL 2025. Congrats!<br><br> 
 		
 	    Our one paper on analysis of positional vectors is accepted by NeurIPS 2024 Spotlight. Congrats!<br><br> 
@@ -314,13 +316,16 @@ html {
 		      and OpenAI CLIP on various downstream tasks.
               </div><br>-->
 
-            <div onmouseover="document.getElementById('Think&Cite').style.display = 'block';"onmouseout="document.getElementById('Think&Cite').style.display='none';">
+	    <heading2><i>2025</i></heading2><br><br>
+
+		<div onmouseover="document.getElementById('Think&Cite').style.display = 'block';"onmouseout="document.getElementById('Think&Cite').style.display='none';">
               <a href="https://arxiv.org/abs/2412.14860">
                 <papertitle>Think&Cite: Improving Attributed Text Generation with Self-Guided Tree Search and Progress Reward Modeling</papertitle>
 	      </a><br>
 		<i><strong>Junyi Li</strong></i>,
 		    <i>Hwee Tou Ng</i>
               <br>
+		<em>The 63rd Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2025<br>
 	      <a href="https://arxiv.org/pdf/2412.14860">pdf</a>  /  <a href="">code</a>
             </div>
               <div id="Think&Cite" style="display:none;text-align:justify">
@@ -342,6 +347,7 @@ html {
 		<i><strong>Junyi Li</strong></i>&dagger;,
 		<i>Jinhao Jiang, Mingyu Xu, Wayne Xin Zhao*, Bingning Wang, Weipeng Chen</i>
               <br>
+		<em>The 63rd Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2025<br>
 	      <a href="https://arxiv.org/pdf/2502.07365">pdf</a>  /  <a href="https://github.com/RUCAIBox/LongReD">code</a>
             </div>
               <div id="LongReD" style="display:none;text-align:justify">
@@ -364,7 +370,8 @@ html {
 		<i><strong>Junyi Li</strong></i>&dagger;,
 		<i>Wayne Xin Zhao*, Ji-Rong Wen</i>
               <br>
-	      <a href="https://arxiv.org/pdf/2501.01306">pdf</a>  /  <a href="https://github.com/RUCAIBox/LongReD">code</a>
+		<em>Findings of The 63rd Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2025<br>
+	      <a href="https://arxiv.org/pdf/2501.01306">pdf</a>  /  <a href="">code</a>
             </div>
               <div id="HaluSearch" style="display:none;text-align:justify">
               	Large language models (LLMs) demonstrate exceptional capabilities, yet still face the hallucination issue. Typical text generation approaches adopt an 
@@ -378,7 +385,50 @@ html {
 		      show that our approach significantly outperforms baseline approaches. 
               </div><br>
 
-	    <heading2><i>2025</i></heading2><br><br>
+				<div onmouseover="document.getElementById('Multilingual').style.display = 'block';"onmouseout="document.getElementById('Multilingual').style.display='none';">
+              <a href="">
+                <papertitle>Just Go Parallel: Improving the Multilingual Capabilities of Large Language Models</papertitle>
+	      </a><br>
+		<i>Muhammad Reza Qorib</i>,
+		<i><strong>Junyi Li</strong></i>,
+		    <i>Hwee Tou Ng</i>
+              <br>
+		<em>The 63rd Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2025<br>
+	      <a href="">pdf</a>  /  <a href="">code</a>
+            </div>
+              <div id="Multilingual" style="display:none;text-align:justify">
+              	Large language models (LLMs) have demonstrated impressive translation capabilities even without being explicitly trained on parallel data. This 
+		      remarkable property has led some to believe that parallel data is no longer necessary for building multilingual language models. While some 
+		      attribute this to the emergent abilities of LLMs due to scale, recent work suggests that it is actually caused by incidental bilingual signals 
+		      present in the training data. Various methods have been proposed to maximize the utility of parallel data to enhance the multilingual capabilities 
+		      of multilingual encoder-based and encoder-decoder language models. However, some decoder-based LLMs opt to ignore parallel data instead. In this 
+		      work, we conduct a systematic study on the impact of adding parallel data on LLMs' multilingual capabilities, focusing specifically on translation 
+		      and multilingual common-sense reasoning. Through controlled experiments, we demonstrate that parallel data can significantly improve LLMs' multilingual 
+		      capabilities.
+              </div><br>
+
+		<div onmouseover="document.getElementById('DynaQuest').style.display = 'block';"onmouseout="document.getElementById('DynaQuest').style.display='none';">
+              <a href="">
+                <papertitle>DynaQuest: A Dynamic Question Answering Dataset Reflecting Real-World Knowledge Updates</papertitle>
+	      </a><br>
+		<i>Qian Lin</i>,
+		<i><strong>Junyi Li</strong></i>,
+		    <i>Hwee Tou Ng</i>
+              <br>
+		<em>Findings of The 63rd Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2025<br>
+	      <a href="">pdf</a>  /  <a href="">code</a>
+            </div>
+              <div id="DynaQuest" style="display:none;text-align:justify">
+              	The rapidly changing nature of real-world information presents challenges for large language models (LLMs), which are typically trained on static 
+		      datasets. This limitation makes it difficult for LLMs to accurately perform tasks that require up-to-date knowledge, such as time-sensitive 
+		      question answering (QA). In this paper, we introduce DynaQuest, a Dynamic Question answering dataset reflecting knowledge updates in the real 
+		      world. DynaQuest is based on Wikipedia Infoboxes, which are frequently updated to reflect real-world changes. Our dataset is created by 
+		      automatically identifying and comparing changes between different versions of Wikipedia pages and generating question-answer pairs based on 
+		      these updates. To address the challenges posed by our dynamic dataset, we propose CARL, a Context-Aware Reinforcement Learning framework to 
+		      improve the performance of LLMs on time-sensitive question answering. We conduct experiments on our collected dataset across recent time periods 
+		      and demonstrate the effectiveness of our approach. Furthermore, we maintain a dynamic knowledge updating process, providing a periodically evolving 
+		      benchmark to continually evaluate LLMs' ability to answer time-sensitive questions.
+              </div><br>
 
 		<div onmouseover="document.getElementById('SearchCRS').style.display = 'block';"onmouseout="document.getElementById('SearchCRS').style.display='none';">
               <a href="https://arxiv.org/abs/2504.20458">
