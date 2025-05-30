@@ -266,59 +266,52 @@ html {
 		      survey, we review the recent advances of LLMs by introducing the background, key findings, and mainstream techniques. In particular, 
 		      we focus on four major aspects of LLMs, namely pre-training, adaptation tuning, utilization, and capacity evaluation. Besides, 
 		      we also summarize the available resources for developing LLMs and discuss the remaining issues for future directions.
+              </div><br>	
+		
+	     <div onmouseover="document.getElementById('ACPO').style.display = 'block';"onmouseout="document.getElementById('ACPO').style.display='none';">
+              <a href="https://arxiv.org/abs/2505.16315">
+                <papertitle>Incentivizing Dual Process Thinking for Efficient Large Language Model Reasoning</papertitle>
+	      </a><br>
+		<i>Xiaoxue Cheng</i>&dagger;,
+		<i><strong>Junyi Li</strong></i>&dagger;,
+		    <i>Zhenduo Zhang, Xinyu Tang, Wayne Xin Zhao*, Xinyu Kong, Zhiqiang Zhang</i>
+              <br>
+	      <a href="https://arxiv.org/pdf/2505.16315">pdf</a>  /  <a href="">code</a>
+            </div>
+              <div id="ACPO" style="display:none;text-align:justify">
+              	Large reasoning models (LRMs) have demonstrated strong performance on complex reasoning tasks, but often suffer from overthinking, generating 
+		      redundant content regardless of task difficulty. Inspired by the dual process theory in cognitive science, we propose Adaptive Cognition 
+		      Policy Optimization (ACPO), a reinforcement learning framework that enables LRMs to achieve efficient reasoning through adaptive cognitive 
+		      allocation and dynamic system switch. ACPO incorporates two key components: (1) introducing system-aware reasoning tokens to explicitly 
+		      represent the thinking modes thereby making the model's cognitive process transparent, and (2) integrating online difficulty estimation and 
+		      token length budget to guide adaptive system switch and reasoning during reinforcement learning. To this end, we propose a two-stage training 
+		      strategy. The first stage begins with supervised fine-tuning to cold start the model, enabling it to generate reasoning paths with explicit 
+		      thinking modes. In the second stage, we apply ACPO to further enhance adaptive system switch for difficulty-aware reasoning. Experimental 
+		      results demonstrate that ACPO effectively reduces redundant reasoning while adaptively adjusting cognitive allocation based on task complexity, 
+		      achieving efficient hybrid reasoning.
               </div><br>
-		
-		
-	  <!--<div onmouseover="document.getElementById('diffusion').style.display = 'block';"onmouseout="document.getElementById('diffusion').style.display='none';">
-              <a href="https://arxiv.org/pdf/2304.12519v2.pdf">
-                <papertitle>GlyphDiffusion: Text Generation as Image Generation</papertitle></a><br>
-	      <i><strong>Junyi Li</strong></i>, 
-			<i>Wayne Xin Zhao</i>*, 
-		      <i>Jian-Yun Nie</i>,
-			<i>Ji-Rong Wen</i><br>
-              <a href="https://arxiv.org/pdf/2304.12519v2.pdf">pdf</a> /  <a href="">code</a>
+
+		<div onmouseover="document.getElementById('ManuSearch').style.display = 'block';"onmouseout="document.getElementById('ManuSearch').style.display='none';">
+              <a href="https://arxiv.org/abs/2505.18105">
+                <papertitle>ManuSearch: Democratizing Deep Search in Large Language Models with a Transparent and Open Multi-Agent Framework</papertitle>
+	      </a><br>
+		<i>Lisheng Huang&dagger;, Yichen Liu&dagger;, Jinhao Jiang&dagger;</i>,
+		<i>Rongxiang Zhang, Jiahao Yan</i>,
+		<i><strong>Junyi Li</strong></i>*,
+		    <i>Wayne Xin Zhao*</i>
+              <br>
+	      <a href="https://arxiv.org/pdf/2505.18105">pdf</a>  /  <a href="https://github.com/RUCAIBox/ManuSearch">code</a>
             </div>
-              <div id="diffusion" style="display:none;text-align:justify">
-              Diffusion models have become a new generative paradigm for text generation. Considering the discrete nature of text, 
-		      in this paper, we propose GlyphDiffusion, a novel diffusion approach for text generation via text-guided 
-		      image generation. Our key idea is to render the target text as a glyph image containing visual language 
-		      content. In this way, conditional text generation can be cast as a text-guided glyph image generation task, 
-		      and it is then natural to apply continuous diffusion models to discrete texts. Specially, we utilize a 
-		      cascaded architecture (\ie a base and a super-resolution diffusion model) to generate high-fidelity glyph 
-		      images based on the input text. Finally, we design a text grounding module to transform and refine the visual 
-		      language content from generated glyph images into the final texts. In experiments over four conditional text 
-		      generation tasks and two classes of metrics (\ie quality and diversity), GlyphDiffusion can achieve comparable 
-		      or even better results than several baselines, including pretrained language models. Our model also makes 
-		      significant improvements compared to the recent diffusion model.
-              </div><br>-->
-		
-	      <!--<div onmouseover="document.getElementById('WenLan').style.display = 'block';"onmouseout="document.getElementById('WenLan').style.display='none';">
-              <a href="https://arxiv.org/pdf/2103.06561.pdf">
-                <papertitle>WenLan: Bridging Vision and Language by Large-Scale Multi-Modal Pre-Training</papertitle></a><br>
-	      <i>Yuqi Huo</i>, <i>Manli Zhang</i>, <i>Guangzhen Liu</i>, <i>Haoyu Lu</i>, <i>Yizhao Gao</i>, <i>Guoxing Yang</i>, <i>Jingyuan Wen</i>, 
-		      <i>Heng Zhang</i>, <i>Baogui Xu</i>,
-		      <i>Weihao Zheng</i>, <i>Zongzheng Xi</i>, <i>Yueqian Yang</i>, <i>Anwen Hu</i>, <i>Jinming Zhao</i>, <i>Ruichen Li</i>, 
-		      <i>Yida Zhao</i>, <i>Liang Zhang</i>,
-		      <i>Yuqing Song</i>, <i>Xin Hong</i>, <i>Wanqing Cui</i>, <i>Danyang Hou</i>, <i>Yingyan Li</i>, <i><strong>Junyi Li</strong></i>, 
-		      <i>Peiyu Liu</i>, <i>Zheng Gong</i>, 
-		      <i>Chuhao Jin</i>, <i>Yuchong Sun</i>, <i>Shizhe Chen</i>, <i>Zhiwu Lu</i>*, <i>Zhicheng Dou</i>, <i>Qin Jin</i>, 
-		      <i>Yanyan Lan</i>, <i>Wayne Xin Zhao</i>, 
-		      <i>Ruihua Song</i>*, <i>Ji-Rong Wen</i>*<br>
-              <a href="https://arxiv.org/pdf/2103.06561.pdf">pdf</a>  /  <a href="https://github.com/BAAI-WuDao/BriVl">code</a> 
-            </div>
-              <div id="WenLan" style="display:none;text-align:justify">
-              Multi-modal pre-training models have been intensively explored to bridge vision and language in recent years. However, most of them 
-		      explicitly model the cross-modal interaction between image-text pairs, by assuming that there exists strong semantic correlation 
-		      between the text and image modalities. Since this strong assumption is often invalid in real-world scenarios, we choose to 
-		      implicitly model the cross-modal correlation for large-scale multi-modal pre-training, which is the focus of the Chinese 
-		      project `WenLan' led by our team. Specifically, with the weak correlation assumption over image-text pairs, we propose a 
-		      two-tower pre-training model called BriVL within the cross-modal contrastive learning framework. Unlike OpenAI CLIP that 
-		      adopts a simple contrastive learning method, we devise a more advanced algorithm by adapting the latest method MoCo into 
-		      the cross-modal scenario. By building a large queue-based dictionary, our BriVL can incorporate more negative samples in 
-		      limited GPU resources. We further construct a large Chinese multi-source image-text dataset called RUC-CAS-WenLan for 
-		      pre-training our BriVL model. Extensive experiments demonstrate that the pre-trained BriVL model outperforms both UNITER 
-		      and OpenAI CLIP on various downstream tasks.
-              </div><br>-->
+              <div id="ManuSearch" style="display:none;text-align:justify">
+              	Recent advances in web-augmented large language models (LLMs) have exhibited strong performance in complex reasoning tasks, yet these capabilities 
+		      are mostly locked in proprietary systems with opaque architectures. In this work, we propose ManuSearch, a transparent and modular multi-agent 
+		      framework designed to democratize deep search for LLMs. ManuSearch decomposes the search and reasoning process into three collaborative agents: 
+		      (1) a solution planning agent that iteratively formulates sub-queries, (2) an Internet search agent that retrieves relevant documents via real-time 
+		      web search, and (3) a structured webpage reading agent that extracts key evidence from raw web content. To rigorously evaluate deep reasoning abilities, 
+		      we introduce ORION, a challenging benchmark focused on open-web reasoning over long-tail entities, covering both English and Chinese. Experimental 
+		      results show that ManuSearch substantially outperforms prior open-source baselines and even surpasses leading closed-source systems. Our work paves 
+		      the way for reproducible, extensible research in open deep search systems.
+              </div><br>
 
 	    <heading2><i>2025</i></heading2><br><br>
 
@@ -330,7 +323,7 @@ html {
 		    <i>Hwee Tou Ng</i>
               <br>
 		<em>The 63rd Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2025<br>
-	      <a href="https://arxiv.org/pdf/2412.14860">pdf</a>  /  <a href="">code</a>
+	      <a href="https://arxiv.org/pdf/2412.14860">pdf</a>  /  <a href="https://github.com/nusnlp/Think-Cite">code</a>
             </div>
               <div id="Think&Cite" style="display:none;text-align:justify">
               	Despite their outstanding capabilities, large language models (LLMs) are prone to hallucination and producing factually incorrect information. 
