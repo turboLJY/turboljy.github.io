@@ -313,6 +313,26 @@ html {
 		      the way for reproducible, extensible research in open deep search systems.
               </div><br>
 
+	    <div onmouseover="document.getElementById('FSPO').style.display = 'block';"onmouseout="document.getElementById('FSPO').style.display='none';">
+              <a href="https://arxiv.org/abs/2505.24630">
+                <papertitle>The Hallucination Dilemma: Factuality-Aware Reinforcement Learning for Large Reasoning Models</papertitle>
+	      </a><br>
+		<i><strong>Junyi Li</strong></i>,
+		    <i>Hwee Tou Ng</i>
+              <br>
+	      <a href="https://arxiv.org/pdf/2505.24630">pdf</a>  /  <a href="https://github.com/nusnlp/FSPO">code</a>
+            </div>
+              <div id="FSPO" style="display:none;text-align:justify">
+              	Large language models (LLMs) have significantly advanced in reasoning tasks through reinforcement learning (RL) optimization, achieving impressive 
+		      capabilities across various challenging benchmarks. However, our empirical analysis reveals a critical drawback: reasoning-oriented RL fine-tuning 
+		      significantly increases the prevalence of hallucinations. We theoretically analyze the RL training dynamics, identifying high-variance gradient, 
+		      entropy-induced randomness, and susceptibility to spurious local optima as key factors leading to hallucinations. To address this drawback, we propose 
+		      Factuality-aware Step-wise Policy Optimization (FSPO), an innovative RL fine-tuning algorithm incorporating explicit factuality verification at each 
+		      reasoning step. FSPO leverages automated verification against given evidence to dynamically adjust token-level advantage values, incentivizing factual 
+		      correctness throughout the reasoning process. Experiments across mathematical reasoning and hallucination benchmarks using Qwen2.5 and Llama models 
+		      demonstrate that FSPO effectively reduces hallucinations while enhancing reasoning accuracy, substantially improving both reliability and performance.
+              </div><br>
+
 	    <heading2><i>2025</i></heading2><br><br>
 
 		<div onmouseover="document.getElementById('Think&Cite').style.display = 'block';"onmouseout="document.getElementById('Think&Cite').style.display='none';">
