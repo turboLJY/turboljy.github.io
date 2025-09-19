@@ -266,9 +266,32 @@ html {
 		      survey, we review the recent advances of LLMs by introducing the background, key findings, and mainstream techniques. In particular, 
 		      we focus on four major aspects of LLMs, namely pre-training, adaptation tuning, utilization, and capacity evaluation. Besides, 
 		      we also summarize the available resources for developing LLMs and discuss the remaining issues for future directions.
-              </div><br>	
-		
-	     <div onmouseover="document.getElementById('ACPO').style.display = 'block';"onmouseout="document.getElementById('ACPO').style.display='none';">
+              </div><br>
+
+	    <heading2><i>2025</i></heading2><br><br>
+
+		<div onmouseover="document.getElementById('FSPO').style.display = 'block';"onmouseout="document.getElementById('FSPO').style.display='none';">
+              <a href="https://arxiv.org/abs/2505.24630">
+                <papertitle>The Hallucination Dilemma: Factuality-Aware Reinforcement Learning for Large Reasoning Models</papertitle>
+	      </a><br>
+		<i><strong>Junyi Li</strong></i>,
+		    <i>Hwee Tou Ng</i>
+              <br>
+			<em>The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS)</em>, 2025<br>
+	      <a href="https://arxiv.org/pdf/2505.24630">pdf</a>  /  <a href="https://github.com/nusnlp/FSPO">code</a>
+            </div>
+              <div id="FSPO" style="display:none;text-align:justify">
+              	Large language models (LLMs) have significantly advanced in reasoning tasks through reinforcement learning (RL) optimization, achieving impressive 
+		      capabilities across various challenging benchmarks. However, our empirical analysis reveals a critical drawback: reasoning-oriented RL fine-tuning 
+		      significantly increases the prevalence of hallucinations. We theoretically analyze the RL training dynamics, identifying high-variance gradient, 
+		      entropy-induced randomness, and susceptibility to spurious local optima as key factors leading to hallucinations. To address this drawback, we propose 
+		      Factuality-aware Step-wise Policy Optimization (FSPO), an innovative RL fine-tuning algorithm incorporating explicit factuality verification at each 
+		      reasoning step. FSPO leverages automated verification against given evidence to dynamically adjust token-level advantage values, incentivizing factual 
+		      correctness throughout the reasoning process. Experiments across mathematical reasoning and hallucination benchmarks using Qwen2.5 and Llama models 
+		      demonstrate that FSPO effectively reduces hallucinations while enhancing reasoning accuracy, substantially improving both reliability and performance.
+              </div><br>
+
+		<div onmouseover="document.getElementById('ACPO').style.display = 'block';"onmouseout="document.getElementById('ACPO').style.display='none';">
               <a href="https://arxiv.org/abs/2505.16315">
                 <papertitle>Incentivizing Dual Process Thinking for Efficient Large Language Model Reasoning</papertitle>
 	      </a><br>
@@ -276,6 +299,7 @@ html {
 		<i><strong>Junyi Li</strong></i>&dagger;,
 		    <i>Zhenduo Zhang, Xinyu Tang, Wayne Xin Zhao*, Xinyu Kong, Zhiqiang Zhang</i>
               <br>
+			<em>The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS)</em>, 2025<br>
 	      <a href="https://arxiv.org/pdf/2505.16315">pdf</a>  /  <a href="">code</a>
             </div>
               <div id="ACPO" style="display:none;text-align:justify">
@@ -290,28 +314,6 @@ html {
 		      results demonstrate that ACPO effectively reduces redundant reasoning while adaptively adjusting cognitive allocation based on task complexity, 
 		      achieving efficient hybrid reasoning.
               </div><br>
-
-	    <div onmouseover="document.getElementById('FSPO').style.display = 'block';"onmouseout="document.getElementById('FSPO').style.display='none';">
-              <a href="https://arxiv.org/abs/2505.24630">
-                <papertitle>The Hallucination Dilemma: Factuality-Aware Reinforcement Learning for Large Reasoning Models</papertitle>
-	      </a><br>
-		<i><strong>Junyi Li</strong></i>,
-		    <i>Hwee Tou Ng</i>
-              <br>
-	      <a href="https://arxiv.org/pdf/2505.24630">pdf</a>  /  <a href="https://github.com/nusnlp/FSPO">code</a>
-            </div>
-              <div id="FSPO" style="display:none;text-align:justify">
-              	Large language models (LLMs) have significantly advanced in reasoning tasks through reinforcement learning (RL) optimization, achieving impressive 
-		      capabilities across various challenging benchmarks. However, our empirical analysis reveals a critical drawback: reasoning-oriented RL fine-tuning 
-		      significantly increases the prevalence of hallucinations. We theoretically analyze the RL training dynamics, identifying high-variance gradient, 
-		      entropy-induced randomness, and susceptibility to spurious local optima as key factors leading to hallucinations. To address this drawback, we propose 
-		      Factuality-aware Step-wise Policy Optimization (FSPO), an innovative RL fine-tuning algorithm incorporating explicit factuality verification at each 
-		      reasoning step. FSPO leverages automated verification against given evidence to dynamically adjust token-level advantage values, incentivizing factual 
-		      correctness throughout the reasoning process. Experiments across mathematical reasoning and hallucination benchmarks using Qwen2.5 and Llama models 
-		      demonstrate that FSPO effectively reduces hallucinations while enhancing reasoning accuracy, substantially improving both reliability and performance.
-              </div><br>
-
-	    <heading2><i>2025</i></heading2><br><br>
 
 		<div onmouseover="document.getElementById('ManuSearch').style.display = 'block';"onmouseout="document.getElementById('ManuSearch').style.display='none';">
               <a href="https://arxiv.org/abs/2505.18105">
@@ -1376,6 +1378,7 @@ In the end, we discuss problems of current long-context models and point out fut
      <!--footer end-->
   
 </body></html>
+
 
 
 
