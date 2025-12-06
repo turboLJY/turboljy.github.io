@@ -259,11 +259,34 @@ html {
 		      we also summarize the available resources for developing LLMs and discuss the remaining issues for future directions.
               </div><br>
 
+		<div onmouseover="document.getElementById('PAL-UI').style.display = 'block';"onmouseout="document.getElementById('PAL-UI').style.display='none';">
+              <a href="https://arxiv.org/abs/2505.24630">
+                <papertitle>PAL-UI: Planning with Active Look-back for Vision-Based GUI Agents</papertitle>
+	      </a><br>
+			<i>Zikang Liu</i>, 
+		<i><strong>Junyi Li</strong></i>,
+		    <i>Wayne Xin Zhao, Dawei Gao, Yaliang Li, Ji-rong Wen</i>
+              <br>
+			<a href="https://arxiv.org/pdf/2510.00413">pdf</a>  /  <a href="">code</a>
+            </div>
+              <div id="PAL-UI" style="display:none;text-align:justify">
+              	Graphical User Interface (GUI) agents powered by Multimodal Large Language Models (MLLMs) promise human-like interaction with software applications, 
+				  yet long-horizon tasks remain challenging due to memory limitations. Existing approaches either truncate history or rely on simple textual summaries, 
+				  which risk losing critical information when past visual details become necessary for future decisions. In this paper, we propose PAL-UI 
+				  (Planning with Active Look-back), a novel framework that enables GUI agents to adaptively retrieve past observations when required. PAL-UI combines a 
+				  dual-level summarization agent, capturing both observation-level cues and action-level outcomes, with a dedicated retrieval tool that allows the agent 
+				  to recall specific historical screenshots during planning. We curate a step-level instruction dataset of 8.6K samples from mobile GUI navigation trajectories 
+				  and train PAL-UI-3B and PAL-UI-7B models based on Qwen2.5-VL. Extensive experiments demonstrate that PAL-UI significantly outperforms baseline models 
+				  and prior methods in mobile GUI navigation tasks, even under data-efficient settings. Moreover, PAL-UI exhibits strong cross-domain generalization, 
+				  achieving notable improvements in web navigation without additional training. Our work highlights the potential of active memory retrieval for long-horizon 
+				  planning capabilities of vision-based GUI agents.
+              </div><br>
+
 	    <heading2><i>2025</i></heading2><br><br>
 
 		<div onmouseover="document.getElementById('FSPO').style.display = 'block';"onmouseout="document.getElementById('FSPO').style.display='none';">
               <a href="https://arxiv.org/abs/2505.24630">
-                <papertitle>The Hallucination Dilemma: Factuality-Aware Reinforcement Learning for Large Reasoning Models</papertitle>
+                <papertitle>Reasoning Models Hallucinate More: Factuality-Aware Reinforcement Learning for Large Reasoning Models</papertitle>
 	      </a><br>
 		<i><strong>Junyi Li</strong></i>,
 		    <i>Hwee Tou Ng</i>
@@ -1369,6 +1392,7 @@ In the end, we discuss problems of current long-context models and point out fut
      <!--footer end-->
   
 </body></html>
+
 
 
 
