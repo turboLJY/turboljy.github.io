@@ -150,7 +150,7 @@ html {
         </p>
         <p style="text-align:justify">
 		I am now a postdoctoral research fellow of <a href="https://www.ds.cityu.edu.hk/">Department of Data Science</a> at <a href="https://www.cityu.edu.hk/">City University of Hong Kong</a>, working with <a href="https://zhaoxyai.github.io/">Prof. ZHAO Xiangyu</a>. I previously worked as a postdoctoral fellow in <a href="https://www.nus.edu.sg/">National University of Singapore</a>, working with <a href="https://www.comp.nus.edu.sg/~nght/">Prof. Hwee Tou Ng</a>. 
-		I earned dual PhD degrees from Gaoling School of Artificial Intelligence at Renmin University of China in 2024, supervised by <a href="http://playbigdata.ruc.edu.cn/batmanfly/">Prof. Wayne Xin Zhao</a> and Department of Computer Science and Operations Research at Université de Montréal, advised by <a href="http://rali.iro.umontreal.ca/nie-site/jian-yun-nie-en/">Prof. Jian-Yun Nie</a>.
+		I earned dual PhD degrees from Gaoling School of Artificial Intelligence at Renmin University of China, supervised by <a href="http://playbigdata.ruc.edu.cn/batmanfly/">Prof. Wayne Xin Zhao</a> and Department of Computer Science and Operations Research at Université de Montréal, advised by <a href="http://rali.iro.umontreal.ca/nie-site/jian-yun-nie-en/">Prof. Jian-Yun Nie</a>.
 	</p>
 	<!--<p style="text-align:justify">
 		I am a final-year PhD student in the Department of Computer Science and Operations Research from Université de Montréal, advised by <a href="http://rali.iro.umontreal.ca/nie-site/jian-yun-nie-en/">Prof. Jian-Yun Nie</a>. Prior to that, I obtained master degree and bachelor degree from Renmin University of China, supervised by <a href="http://playbigdata.ruc.edu.cn/batmanfly/">Prof. Xin Zhao</a>.
@@ -213,11 +213,13 @@ html {
             </ul>-->
 
 	    <ul style="margin: 0; padding: 0; list-style-type: none;">
-		Our two papers are accepted by NeurIPS 2025. Congrats!<br><br> 
+		Our paer was accepted by WWW 2026. Congrats!<br><br> 
 			
-	    Our five papers are accepted by ACL 2025 and Findings of ACL. Congrats!<br><br> 
+		Our two papers were accepted by NeurIPS 2025. Congrats!<br><br> 
+			
+	    Our five papers were accepted by ACL 2025 and Findings of ACL. Congrats!<br><br> 
 
-	    Our three papers on domain adpatation, ICL analysis, and RAG enhancement are accepted by ICLR 2025 and NAACL 2025. Congrats!<br>   
+	    Our three papers on domain adpatation, ICL analysis, and RAG enhancement were accepted by ICLR 2025 and NAACL 2025. Congrats!<br>   
             </ul>
 		
         </td></tr>
@@ -280,6 +282,33 @@ html {
 				  and prior methods in mobile GUI navigation tasks, even under data-efficient settings. Moreover, PAL-UI exhibits strong cross-domain generalization, 
 				  achieving notable improvements in web navigation without additional training. Our work highlights the potential of active memory retrieval for long-horizon 
 				  planning capabilities of vision-based GUI agents.
+              </div><br>
+
+		<heading2><i>2026</i></heading2><br><br>
+
+		<div onmouseover="document.getElementById('SearchBoundary').style.display = 'block';"onmouseout="document.getElementById('SearchBoundary').style.display='none';">
+              <a href="">
+                <papertitle>To Search or Not to Search: Aligning the Decision Boundary of Deep Search Agents via Causal Intervention</papertitle>
+	      </a><br>
+			<i>Wenlin Zhang, Kuicai Dong</i>,
+		<i><strong>Junyi Li</strong></i>,
+		    <i>Yingyi Zhang, Xiaopeng Li, Pengyue Jia, Yi Wen, Derong Xu, Maolin Wang, Yichao Wang, Yong Liu, Xiangyu Zhao</i>
+              <br>
+			<em>The Web Conference (WWW)</em>, 2026<br>
+	      <a href="">pdf</a>  /  <a href="">code</a>
+            </div>
+              <div id="SearchBoundary" style="display:none;text-align:justify">
+              	Deep search agents, which autonomously iterate through multiturn web-based reasoning, represent a promising paradigm for complex information-seeking tasks. 
+				  However, current agents suffer from critical inefficiency: they conduct excessive search rounds due to poorly calibrated judgments of when to stop 
+				  searching and answer. This inefficiency stems from outcome-centric training paradigms that prioritize final results while neglecting intermediate 
+				  decision quality. We identify the root cause as misaligned decision boundaries, the threshold determining when accumulated information becomes sufficient 
+				  to answer queries. This misalignment manifests in two failure modes: over-search, where agents redundantly search despite sufficient knowledge, and 
+				  under-search, where they terminate search prematurely and provide incorrect answers. To address these errors, we propose a comprehensive framework 
+				  comprising two key components. First, we introduce a causal intervention-based diagnosis that identifies boundary errors by comparing factual trajectories 
+				  against counterfactual alternatives at each decision point. Second, we develop Decision Boundary Alignment for Deep Search agents (DAS), which constructs 
+				  preference datasets from causal feedback and aligns policies via preference optimization. Experiments on public datasets demonstrate that decision boundary 
+				  errors are pervasive across state-of-the-art agents. Our DAS method effectively calibrates these boundaries, reducing both over-search and under-search to 
+				  achieve substantial gains in accuracy and efficiency.
               </div><br>
 
 	    <heading2><i>2025</i></heading2><br><br>
@@ -1392,6 +1421,7 @@ In the end, we discuss problems of current long-context models and point out fut
      <!--footer end-->
   
 </body></html>
+
 
 
 
