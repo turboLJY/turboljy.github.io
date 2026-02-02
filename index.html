@@ -286,6 +286,31 @@ html {
 
 		<heading2><i>2026</i></heading2><br><br>
 
+		<div onmouseover="document.getElementById('RF-Mem').style.display = 'block';"onmouseout="document.getElementById('RF-Mem').style.display='none';">
+              <a href="">
+                <papertitle>Evoking User Memory: Personalizing LLM via Recollection-Familiarity Adaptive Retrieval</papertitle>
+	      </a><br>
+			<i>Yingyi Zhang</i>,
+		<i><strong>Junyi Li</strong></i>,
+		    <i>Wenlin Zhang, Pengyue Jia, Xianneng Li, Yichao Wang, Derong Xu, Yi Wen, Huifeng Guo, Yong Liu, Xiangyu Zhao </i>
+              <br>
+			<em>The Fourteenth International Conference on Learning Representations (ICLR)</em>, 2026<br>
+	      <a href="">pdf</a>  /  <a href="">code</a>
+            </div>
+              <div id="RF-Mem" style="display:none;text-align:justify">
+              	Personalized large language models (LLMs) rely on memory retrieval to incorporate user-specific histories, preferences, and contexts. Existing approaches either overload the LLM by feeding 
+				  all the user's past memory into the prompt, which is costly and unscalable, or simplify retrieval into a one-shot similarity search, which captures only surface matches. Cognitive science, 
+				  however, shows that human memory operates through a dual process: Familiarity, offering fast but coarse recognition, and Recollection, enabling deliberate, chain-like reconstruction for deeply 
+				  recovering episodic content. Current systems lack both the ability to perform recollection retrieval and mechanisms to adaptively switch between the dual retrieval paths, leading to either 
+				  insufficient recall or the inclusion of noise. To address this, we propose RF-Mem (Recollection–Familiarity Memory Retrieval), a familiarity uncertainty-guided dual-path memory retriever. 
+				  RF-Mem measures the familiarity signal through the mean score and entropy. High familiarity leads to the direct top-K Familiarity retrieval path, while low familiarity activates the Recollection path. 
+				  In the Recollection path, the system clusters candidate memories and applies alpha-mix with the query to iteratively expand evidence in embedding space, simulating deliberate contextual reconstruction. 
+				  This design embeds human-like dual-process recognition into the retriever, avoiding full-context overhead and enabling scalable, adaptive personalization. Experiments across three benchmarks and 
+				  corpus scales demonstrate that RF-Mem consistently outperforms both one-shot retrieval and full-context reasoning under fixed budget and latency constraints. Our code can be found in the Supplementary 
+				  Materials.
+              </div><br>
+
+
 		<div onmouseover="document.getElementById('SearchBoundary').style.display = 'block';"onmouseout="document.getElementById('SearchBoundary').style.display='none';">
               <a href="">
                 <papertitle>To Search or Not to Search: Aligning the Decision Boundary of Deep Search Agents via Causal Intervention</papertitle>
@@ -1421,6 +1446,7 @@ In the end, we discuss problems of current long-context models and point out fut
      <!--footer end-->
   
 </body></html>
+
 
 
 
