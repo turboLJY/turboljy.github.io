@@ -213,7 +213,9 @@ html {
             </ul>-->
 
 	    <ul style="margin: 0; padding: 0; list-style-type: none;">
-		Our paer was accepted by WWW 2026. Congrats!<br><br> 
+		Our three papers were accepted by ACL 2026 Main and Findings. Congrats!<br><br> 
+			
+		Our two papers were accepted by WWW 2026 and ICLR 2026. Congrats!<br><br> 
 			
 		Our two papers were accepted by NeurIPS 2025. Congrats!<br><br> 
 			
@@ -240,7 +242,7 @@ html {
 	      <i><strong>Junyi Li</strong></i>&dagger;,
 	      <i>Tianyi Tang, Xiaolei Wang, Yupeng Hou, Yingqian Min, Beichen Zhang, Junjie Zhang, Zican Dong, Yifan Du, Chen Yang, Yushuo Chen, Zhipeng Chen, Jinhao Jiang, Ruiyang Ren, Yifan Li, Xinyu Tang, Zikang Liu, Peiyu Liu</i>,
               <i>Jian-Yun Nie</i>,
-	      <i>Ji-Rong Wen</i>
+	      <i>Ji-Rong Wen</i>*
               <br>
 			  <em>Frontiers of Computer Science</em>, 2026<br>
 	      <a href="https://arxiv.org/pdf/2303.18223.pdf">pdf</a>  /  <a href="https://github.com/RUCAIBox/LLMSurvey">code</a>
@@ -265,13 +267,79 @@ html {
 
 		<heading2><i>2026</i></heading2><br><br>
 
+		<div onmouseover="document.getElementById('AGDO').style.display = 'block';"onmouseout="document.getElementById('AGDO').style.display='none';">
+              <a href="">
+                <papertitle>Beyond Fully Random Masking: Attention-Guided Denoising and Optimization for Diffusion Language Models</papertitle>
+	      </a><br>
+			<i>Jia Deng</i>,
+		<i><strong>Junyi Li</strong></i>,
+		    <i>Xin Zhao*, Jinpeng Wang, Hongyu Lu, Ji-Rong Wen</i>
+              <br>
+			<em>The 64th Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2026<br>
+	      <a href="">pdf</a>  /  <a href="">code</a>
+            </div>
+              <div id="AGDO" style="display:none;text-align:justify">
+              	Diffusion large language models (dLLMs) offer an efficient alternative to autoregressive models through parallel decoding, yet existing post-training 
+				  methods largely rely on random masking strategies that overlook intrinsic token dependencies. In this work, we present an empirical analysis of 
+				  attention in dLLMs and show that tokens attending more strongly to revealed context exhibit greater generation stability and play a critical role in 
+				  reasoning. Motivated by these findings, we propose AGDO, an attention-guided denoising and optimization framework that aligns both training and 
+				  optimization with attention-derived dependencies. AGDO determines the denoising order based on attention structure and emphasizes attention-critical 
+				  tokens during supervised fine-tuning and reinforcement learning. Experiments on mathematical and coding benchmarks demonstrate that AGDO consistently 
+				  improves reasoning performance, outperforming state-of-the-art post-training methods for dLLMs.
+              </div><br>
+
+		<div onmouseover="document.getElementById('EvoPH').style.display = 'block';"onmouseout="document.getElementById('EvoPH').style.display='none';">
+              <a href="">
+                <papertitle>Experience-Driven Reflective Co-Evolution of Prompts and Heuristics for Autonomous Algorithm Design</papertitle>
+	      </a><br>
+			<i>Yihong Liu</i>,
+		<i><strong>Junyi Li</strong></i>,
+		    <i>Hongyu Lu, Xin Zhao*, Ji-Rong Wen</i>
+              <br>
+			<em>Findings of The 64th Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2026<br>
+	      <a href="">pdf</a>  /  <a href="">code</a>
+            </div>
+              <div id="EvoPH" style="display:none;text-align:justify">
+              	Combinatorial optimization has long been dominated by manually engineered heuristics, a paradigm requiring substantial expert intuition and implementation 
+				  overhead. The advent of Large Language Models has disrupted this landscape, enabling the autonomous synthesis and optimization of algorithms. Recent 
+				  approaches typically iterate on heuristic populations using LLMs as mutators; however, these strategies often suffer from limited exploration, leading to 
+				  stagnation in local optima. To overcome this, we present the Experience-Driven Reflective Co-\textbf{Evo}lution of \textbf{P}rompt and \textbf{H}euristics 
+				  (\textbf{EvoPH}) for autonomous algorithm design, a novel framework that couples an island migration model with elite selection to maintain population 
+				  diversity. Uniquely, EvoPH co-evolves both the guiding prompts and the heuristics themselves, using a feedback loop driven by past experience to refine 
+				  the search process. We demonstrate EvoPH's efficacy on the Traveling Salesman and Bin Packing Problems. Our results show that EvoPH achieves superior 
+				  accuracy compared to baselines, marking a significant step forward in LLM-aided algorithm design.
+              </div><br>
+
+		<div onmouseover="document.getElementById('MemSearch-o1').style.display = 'block';"onmouseout="document.getElementById('MemSearch-o1').style.display='none';">
+              <a href="">
+                <papertitle>MemSearch-o1: Empowering Large Language Models with Reasoning-Aligned Memory Growth in Agentic Search</papertitle>
+	      </a><br>
+			<i>Sheng Zhang</i>,
+		<i><strong>Junyi Li</strong></i>,
+		    <i>Yingyi Zhang, Pengyue Jia, Yichao Wang, Xiaowei Qian, Wenlin Zhang, Maolin Wang, Yong Liu, Xiangyu Zhao*</i>
+              <br>
+			<em>The 64th Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2026<br>
+	      <a href="">pdf</a>  /  <a href="">code</a>
+            </div>
+              <div id="MemSearch-o1" style="display:none;text-align:justify">
+              	Recent advances in large language models (LLMs) have scaled the potential for reasoning and agentic search, wherein models autonomously plan, 
+				  retrieve, and reason over external knowledge to answer complex queries. However, the iterative think–search loop accumulates long system memories, 
+				  leading to memory dilution problem. In addition, existing memory management methods struggle to capture fine-grained semantic relations between queries
+				  and documents and often lose substantial information. Therefore, we propose MemSearch-o1, an agentic search framework built on reasoning-aligned memory 
+				  growth and retracing. MemSearch-o1 dynamically grows fine-grained memory fragments from memory seed tokens from the queries, then retraces and deeply 
+				  refines the memory via a contribution function, and finally reorganizes a globally connected memory path. This shifts memory management from stream-like 
+				  concatenation to structured, token-level growth with path-based reasoning. Experiments on eight benchmark datasets show that MemSearch-o1 substantially 
+				  mitigates memory dilution, and more effectively activates the reasoning potential of diverse LLMs, establishing a solid foundation for memory-aware 
+				  agentic intelligence.
+              </div><br>
+
 		<div onmouseover="document.getElementById('RF-Mem').style.display = 'block';"onmouseout="document.getElementById('RF-Mem').style.display='none';">
               <a href="">
                 <papertitle>Evoking User Memory: Personalizing LLM via Recollection-Familiarity Adaptive Retrieval</papertitle>
 	      </a><br>
 			<i>Yingyi Zhang</i>&dagger;,
 		<i><strong>Junyi Li</strong></i>&dagger;,
-		    <i>Wenlin Zhang, Pengyue Jia, Xianneng Li, Yichao Wang, Derong Xu, Yi Wen, Huifeng Guo, Yong Liu, Xiangyu Zhao </i>
+		    <i>Wenlin Zhang, Pengyue Jia, Xianneng Li, Yichao Wang, Derong Xu, Yi Wen, Huifeng Guo, Yong Liu, Xiangyu Zhao* </i>
               <br>
 			<em>The Fourteenth International Conference on Learning Representations (ICLR)</em>, 2026<br>
 	      <a href="">pdf</a>  /  <a href="">code</a>
@@ -296,7 +364,7 @@ html {
 	      </a><br>
 			<i>Wenlin Zhang, Kuicai Dong</i>,
 		<i><strong>Junyi Li</strong></i>,
-		    <i>Yingyi Zhang, Xiaopeng Li, Pengyue Jia, Yi Wen, Derong Xu, Maolin Wang, Yichao Wang, Yong Liu, Xiangyu Zhao</i>
+		    <i>Yingyi Zhang, Xiaopeng Li, Pengyue Jia, Yi Wen, Derong Xu, Maolin Wang, Yichao Wang, Yong Liu, Xiangyu Zhao*</i>
               <br>
 			<em>The Web Conference (WWW)</em>, 2026<br>
 	      <a href="">pdf</a>  /  <a href="">code</a>
