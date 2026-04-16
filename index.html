@@ -267,13 +267,37 @@ html {
 
 		<heading2><i>2026</i></heading2><br><br>
 
+		<div onmouseover="document.getElementById('LMM-Searcher').style.display = 'block';"onmouseout="document.getElementById('LMM-Searcher').style.display='none';">
+              <a href="">
+                <papertitle>Towards Long-horizon Agentic Multimodal Search</papertitle>
+	      </a><br>
+			<i>Yifan Du&dagger;, Zikang Liu&dagger;, Jinbiao Peng, Jie Wu</i>,
+		<i><strong>Junyi Li</strong></i>,
+		    <i>Jinyang Li, Wayne Xin Zhao*, Ji-Rong Wen</i>
+              <br>
+			<em>arXiv</em>, 2026<br>
+	      <a href="https://arxiv.org/pdf/2604.12890">pdf</a>  /  <a href="https://github.com/RUCAIBox/LMM-Searcher">code</a>
+            </div>
+              <div id="LMM-Searcher" style="display:none;text-align:justify">
+              	Multimodal deep search agents have shown great potential in solving complex tasks by iteratively collecting textual and visual evidence. However, 
+				  managing the heterogeneous information and high token costs associated with multimodal inputs over long horizons remains a critical challenge, as 
+				  existing methods often suffer from context explosion or the loss of crucial visual signals. To address this, we propose a novel Long-horizon MultiModal 
+				  deep search framework, named LMM-Searcher, centered on a file-based visual representation mechanism. By offloading visual assets to an external file system 
+				  and mapping them to lightweight textual identifiers (UIDs), our approach mitigates context overhead while preserving multimodal information for future 
+				  access. We equip the agent with a tailored fetch-image tool, enabling a progressive, on-demand visual loading strategy for active perception. Furthermore, 
+				  we introduce a data synthesis pipeline designed to generate queries requiring complex cross-modal multi-hop reasoning. Using this pipeline, we distill 12K 
+				  high-quality trajectories to fine-tune Qwen3-VL-Thinking-30A3B into a specialized multimodal deep search agent. Extensive experiments across four benchmarks 
+				  demonstrate that our method successfully scales to 100-turn search horizons, achieving state-of-the-art performance among open-source models on challenging 
+				  long-horizon benchmarks like MM-BrowseComp and MMSearch-Plus, while also exhibiting strong generalizability across different base models. 
+              </div><br>
+
 		<div onmouseover="document.getElementById('AGDO').style.display = 'block';"onmouseout="document.getElementById('AGDO').style.display='none';">
               <a href="">
                 <papertitle>Beyond Fully Random Masking: Attention-Guided Denoising and Optimization for Diffusion Language Models</papertitle>
 	      </a><br>
 			<i>Jia Deng</i>,
-		<i><strong>Junyi Li</strong></i>,
-		    <i>Xin Zhao*, Jinpeng Wang, Hongyu Lu, Ji-Rong Wen</i>
+		<i><strong>Junyi Li*</strong></i>,
+		    <i>Wayne Xin Zhao*, Jinpeng Wang, Hongyu Lu, Ji-Rong Wen</i>
               <br>
 			<em>The 64th Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2026<br>
 	      <a href="">pdf</a>  /  <a href="">code</a>
@@ -294,7 +318,7 @@ html {
 	      </a><br>
 			<i>Yihong Liu</i>,
 		<i><strong>Junyi Li</strong></i>,
-		    <i>Hongyu Lu, Xin Zhao*, Ji-Rong Wen</i>
+		    <i>Hongyu Lu, Wayne Xin Zhao*, Ji-Rong Wen</i>
               <br>
 			<em>Findings of The 64th Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2026<br>
 	      <a href="">pdf</a>  /  <a href="">code</a>
