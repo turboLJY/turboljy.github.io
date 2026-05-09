@@ -267,6 +267,50 @@ html {
 
 		<heading2><i>2026</i></heading2><br><br>
 
+		<div onmouseover="document.getElementById('ParetoPO').style.display = 'block';"onmouseout="document.getElementById('ParetoPO').style.display='none';">
+              <a href="">
+                <papertitle>Towards Pareto-Optimal Tool-Integrated Agents with Pareto Ranking Policy Optimization</papertitle>
+	      </a><br>
+			<i><strong>Junyi Li</strong></i>,
+		    <i>Xiaowei Qian, Yingyi Zhang, Wenlin Zhang, Guojing Li, Sheng Zhang, Xiao Han, Yichao Wang, Xiangyu Zhao*</i>
+              <br>
+			<em>The Forty-Third International Conference on Machine Learning (ICML)</em>, 2026<br>
+	      <a href="">pdf</a>  /  <a href="">code</a>
+            </div>
+              <div id="ParetoPO" style="display:none;text-align:justify">
+              	Recent advances in tool-integrated language agents have significantly improved their ability to solve complex reasoning tasks. However, existing alignment 
+				  methods predominantly focus on maximizing task accuracy, while overlooking auxiliary objectives such as tool-use efficiency, which are essential for 
+				  practical deployment. To address this gap, we introduce {ParetoPO}, a two-stage multi-objective optimization framework for aligning tool-using large 
+				  language models (LLMs) under competing objectives. In the first stage, ParetoPO leverages hypervolume-guided dynamic scalarization to adapt reward 
+				  weights based on global Pareto frontier progress. In the second stage, it replaces scalarized learning signals with Pareto-ranking-based advantage 
+				  computation, promoting nondominated trajectories through dominance-aware credit assignment. This design enables fine-grained, action-level optimization 
+				  across multiple conflicting objectives. Experimental results on mathematic reasoning and deep search tasks show that ParetoPO consistently discovers 
+				  policies with superior accuracy-efficiency trade-offs compared to static and heuristic baselines.
+              </div><br>
+
+		<div onmouseover="document.getElementById('ForesightKV').style.display = 'block';"onmouseout="document.getElementById('ForesightKV').style.display='none';">
+              <a href="">
+                <papertitle>ForesightKV: Optimizing KV Cache Eviction for Reasoning Models by Learning Long-Term Contribution</papertitle>
+	      </a><br>
+			<i>Zican Dong, Peiyu Liu,</i>
+			<i><strong>Junyi Li</strong></i>,
+		    <i>Zhipeng Chen, Han Peng, Shuo Wang, Xin Zhao*</i>
+              <br>
+			<em>The Forty-Third International Conference on Machine Learning (ICML)</em>, 2026<br>
+	      <a href="">pdf</a>  /  <a href="">code</a>
+            </div>
+              <div id="ForesightKV" style="display:none;text-align:justify">
+              	Recently, large language models (LLMs) have shown remarkable reasoning abilities by producing long reasoning traces. However, as the sequence length grows, 
+				  the key-value (KV) cache expands linearly, incurring significant memory and computation costs. Existing KV cache eviction methods mitigate this issue by 
+				  discarding less important KV pairs, but often fail to capture complex KV dependencies, resulting in performance degradation. To better balance efficiency 
+				  and performance, we introduce ForesightKV, a training-based KV cache eviction framework that learns to predict which KV pairs to evict during long-text 
+				  generations. We first design the Golden Eviction algorithm, which identifies the optimal eviction KV pairs at each step using future attention scores. 
+				  These traces and the scores at each step are then distilled via supervised training with a Pairwise Ranking Loss. Furthermore, we formulate cache eviction 
+				  as a Markov Decision Process and apply the GRPO algorithm to mitigate the significant language modeling loss increase on low-entropy tokens. Experiments 
+				  on AIME2024 and AIME2025 benchmarks of three reasoning models demonstrate that ForesightKV consistently outperforms prior methods under only half the cache 
+				  budget, while benefiting synergistically from both supervised and reinforcement learning approaches.
+              </div><br>
+
 		<div onmouseover="document.getElementById('LMM-Searcher').style.display = 'block';"onmouseout="document.getElementById('LMM-Searcher').style.display='none';">
               <a href="">
                 <papertitle>Towards Long-horizon Agentic Multimodal Search</papertitle>
