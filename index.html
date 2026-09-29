@@ -267,6 +267,26 @@ html {
 
 		<heading2><i>2026</i></heading2><br><br>
 
+		<div onmouseover="document.getElementById('SEAR').style.display = 'block';"onmouseout="document.getElementById('SEAR').style.display='none';">
+              <a href="">
+                <papertitle>SEAR: Self-Judging Agentic Reward Models</papertitle>
+	      </a><br>
+			<i>Bingqian Li, Chuan Hao, <strong>Junyi Li</strong></i>,
+		    <i>Ran Tao, Jian Yang, Xin Zhao</i>
+              <br>
+			<em>The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>, 2026<br>
+	      <a href="">pdf</a>  /  <a href="">code</a>
+            </div>
+              <div id="SEAR" style="display:none;text-align:justify">
+              	Agentic reward models enhance large language model (LLM) evaluation by incorporating external tool-use capabilities. However, their training is heavily 
+				  constrained by coarse-grained outcome supervision and the high cost of process-level annotations. To address these challenges, we propose SEAR (Self-judging 
+				  agentic reward models), a novel training framework that enables agentic reward models to self-judge their own judging processes. SEAR introduces a dual-role 
+				  adversarial co-evolution framework, where the model alternates between a judger and a self-judger within a single generation process: the judger is 
+				  optimized to produce more rigorous reasoning trajectories that maximize self-judgment scores, while the self-judger learns to provide critical and 
+				  discriminative evaluations. Moreover, SEAR further enables agentic RMs to self-evolve without relying on external human annotations. Extensive experiments 
+				  demonstrate that SEAR consistently improves the reliability of agentic reward models across diverse benchmarks.
+              </div><br>
+
 		<div onmouseover="document.getElementById('ParetoPO').style.display = 'block';"onmouseout="document.getElementById('ParetoPO').style.display='none';">
               <a href="">
                 <papertitle>Towards Pareto-Optimal Tool-Integrated Agents with Pareto Ranking Policy Optimization</papertitle>
