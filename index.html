@@ -267,6 +267,27 @@ html {
 
 		<heading2><i>2026</i></heading2><br><br>
 
+		<div onmouseover="document.getElementById('EntroDrop').style.display = 'block';"onmouseout="document.getElementById('EntroDrop').style.display='none';">
+              <a href="">
+                <papertitle>Entropy-Guided Token Dropout: Training Autoregressive Language Models with Limited Domain Data</papertitle>
+	      </a><br>
+			<i>Jiapeng Wang, Hu Yiwen, Yanzipeng Gao, Haoyu Wang, Shuo Wang, Hongyu Lu, Jiaxin Mao, Xin Zhao*, <strong>Junyi Li*</strong>, Xiao Zhang*</i>
+              <br>
+			<em>The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>, 2026<br>
+	      <a href="">pdf</a>  /  <a href="">code</a>
+            </div>
+              <div id="EntroDrop" style="display:none;text-align:justify">
+              	As access to high-quality, domain-specific data grows increasingly scarce, multi-epoch training has become a practical strategy for adapting large language 
+				  models (LLMs). However, autoregressive models often suffer from performance degradation under repeated data exposure, where overfitting leads to a marked 
+				  decline in model capability. Through empirical analysis, we trace this degradation to an imbalance in learning dynamics: predictable, low-entropy tokens 
+				  are learned quickly and come to dominate optimization, while the model's ability to generalize on high-entropy tokens deteriorates with continued training. 
+				  To address this, we introduce \textbf{EntroDrop}, an entropy-guided token dropout method that functions as structured data regularization. EntroDrop 
+				  selectively masks low-entropy tokens during training and employs a curriculum schedule to adjust regularization strength in alignment with training progress. 
+				  Experiments across model scales from 0.6B to 8B parameters show that EntroDrop consistently outperforms standard regularization baselines and maintains 
+				  robust performance throughout extended multi-epoch training. These findings underscore the importance of aligning regularization with token-level learning 
+				  dynamics when training on limited data. Our approach offers a promising pathway toward more effective adaptation of LLMs in data-constrained domains.
+              </div><br>
+
 		<div onmouseover="document.getElementById('SEAR').style.display = 'block';"onmouseout="document.getElementById('SEAR').style.display='none';">
               <a href="">
                 <papertitle>SEAR: Self-Judging Agentic Reward Models</papertitle>
