@@ -267,6 +267,27 @@ html {
 
 		<heading2><i>2026</i></heading2><br><br>
 
+		<div onmouseover="document.getElementById('R2-Searcher').style.display = 'block';"onmouseout="document.getElementById('R2-Searcher').style.display='none';">
+              <a href="">
+                <papertitle>R$^2$-Searcher: Calibrating Retrieval and Reasoning Boundaries for Agentic Search</papertitle>
+	      </a><br>
+			<i>Sheng Zhang, <strong>Junyi Li</strong>, Wenlin Zhang, Xiaowei Qian, Yichao Wang, Yingyi Zhang, Maolin Wang, Yong Liu and Xiangyu Zhao</i>
+              <br>
+			<em>The 35th ACM International Conference on Information and Knowledge Management (CIKM)</em>, 2026<br>
+	      <a href="">pdf</a>  /  <a href="">code</a>
+            </div>
+              <div id="R2-Searcher" style="display:none;text-align:justify">
+              	Recent search agents for multi-hop reasoning often fail by either retrieving incomplete evidence or reasoning over irrelevant portions of the retrieved content, 
+				  leading to a retrieval-reasoning boundary shift. We propose R2-Searcher, a novel framework that explicitly explores and calibrates the retrieval and reasoning 
+				  boundaries via fine-grained, query-token-guided evidence modeling and post-retrieval reflection. Specifically, R2-Searcher: (1) constructs fine-grained reasoning 
+				  contexts by extracting precise facts from retrieved content based on query token semantics (e.g., subjects, actions, temporal markers, and degree modifiers), 
+				  thereby guiding the attention of search agent; (2) introduces a retrieval reflection mechanism that evaluates and corrects boundary deviations after each retrieval 
+				  step, guiding the generation of improved queries grounded in the extracted reasoning contexts; and (3) employs an end-to-end reasoning-reflection-guided reinforcement 
+				  learning algorithm, R2PO, which jointly optimizes both boundaries through a tree-based exploration of reasoning regions and reflections. Our method significantly enhances 
+				  the quality of both retrieval and reasoning, establishing an iterative loop where retrieval and reasoning mutually enhance each other. Extensive experiments on 
+				  seven complex multi-hop QA benchmarks demonstrate that R2-Searcher significantly outperforms state-of-the-art agentic search methods in answer accuracy and retrieval-reasoning quality. Ablation studies further confirm the critical role of retrieval-reasoning boundary calibration.
+              </div><br>
+
 		<div onmouseover="document.getElementById('EntroDrop').style.display = 'block';"onmouseout="document.getElementById('EntroDrop').style.display='none';">
               <a href="">
                 <papertitle>Entropy-Guided Token Dropout: Training Autoregressive Language Models with Limited Domain Data</papertitle>
